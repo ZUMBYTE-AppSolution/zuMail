@@ -1,35 +1,16 @@
-# Anbieter-Anmeldung · Für den Herausgeber
+# Konten einrichten
 
-Mailnutzer benötigen keine eigenen OAuth-Schlüssel. Die gemeinsame Google-Registrierung ist ab Alpha 2 enthalten. **Konto verknüpfen → Gmail** startet direkt die Browser-Anmeldung. Microsoft ist für diesen Build zurückgestellt und ohne Herausgeberregistrierung in der Anbieterauswahl ausgeblendet.
+Unter **Konto verknüpfen** einen Anbieter oder **Freie Eingabe** wählen. Für neue Konten verwendet zuMail IMAP und SMTP mit Passwort bzw. einem vom Anbieter unterstützten App-Passwort. Die App enthält keine Browser-Anmeldung, keine Schlüssel-Eingabe und keine gemeinsame OAuth-Registrierung.
 
-## Google veröffentlichen
+1. Arbeitsbereich anlegen und **Konto verknüpfen** öffnen.
+2. Anbieter auswählen. Gmail und iCloud haben vorbereitete Serverdaten; **Freie Eingabe** ermittelt die Konfiguration nach Eingabe der Mailadresse.
+3. Mailadresse, Anzeigename und Passwort bzw. App-Passwort eintragen. Benutzername kann leer bleiben, wenn er der Mailadresse entspricht.
+4. IMAP-/SMTP-Server, Ports und sichere Verbindung prüfen. **Speichern & verbinden** prüft Empfang und Versand, bevor das Konto übernommen wird.
 
-Im [zuMail-Projekt der Google Auth Platform](https://console.cloud.google.com/auth/overview):
+Nicht jeder Anbieter erlaubt die Anmeldung mit dem normalen Kontopasswort. Ein erforderliches App-Passwort wird beim jeweiligen Mailanbieter erstellt. Wenn ein Anbieter ausschließlich Browser-OAuth erlaubt, ist eine neue Kontoverknüpfung in diesem Build nicht möglich.
 
-1. Unter **Branding** Appname, Supportadresse, Entwicklerkontakt, Startseite und Datenschutzerklärung hinterlegen. Verwendete Domains gegebenenfalls verifizieren.
-2. Unter **Audience / Zielgruppe** eine externe Zielgruppe für private Gmail-Konten verwenden. Im Testmodus die vorgesehenen Testnutzer eintragen. Für den allgemeinen Betrieb die App veröffentlichen.
-3. Unter **Data Access / Datenzugriff** openid, profile, email und **https://mail.google.com/** angeben. Der vollständige Gmail-Zugriff wird für IMAP/SMTP benötigt. Kontakte werden separat mit **https://www.googleapis.com/auth/contacts.readonly** angefordert; hierfür die People API aktivieren.
-4. Unter **Clients** den Typ **Desktop-App** verwenden. zuMail nutzt PKCE und einen lokalen Loopback-Rückruf. Eine öffentliche Rückruf-Webseite ist nicht nötig.
-5. Die erforderliche Prüfung eingeschränkter Gmail-Berechtigungen beantragen, einschließlich Begründung der Berechtigungen und Vorführung der Anwendung.
+Kontakte lassen sich lokal verwalten und als vCards importieren/exportieren. Unter **Adressbücher** eine direkte HTTPS-CardDAV-Adresse mit Benutzername und Passwort/App-Passwort hinterlegen. Das Zurückschreiben von Änderungen ist optional.
 
-Die Registrierung und Prüfung sind Aufgaben des Herausgebers. Testmodus und veröffentlichte, noch ungeprüfte Apps können Zugriffsbeschränkungen und Warnungen haben. Ein GitHub-Release allein schaltet den Zugriff bei Google nicht frei. Der aktuelle Freigabestatus wurde nicht geprüft; eine echte Google-Anmeldung wurde noch nicht durchgeführt.
+Vorhandene Konten, verschlüsselte Profile und Kontakte bleiben erhalten. Frühere OAuth-Verbindungen werden nicht gelöscht; solange der Anbieter die gespeicherte Anmeldung akzeptiert, kann sie ohne neue Browser-Anmeldung weiter genutzt werden. Beim Speichern einer Umstellung auf Passwort wird die neue Verbindung zuerst geprüft.
 
-Offizielle Quellen: [Desktop-OAuth](https://developers.google.com/identity/protocols/oauth2/native-app), [Gmail OAuth](https://developers.google.com/workspace/gmail/imap/xoauth2-protocol), [Prüfung eingeschränkter Berechtigungen](https://developers.google.com/identity/protocols/oauth2/production-readiness/restricted-scope-verification).
-
-## Release-Konfiguration
-
-Release-Builds lesen die Herausgeberdatei unter `%LOCALAPPDATA%\Zumbyte\BuildCredentials\zuMail\publisher-oauth.json` mit GoogleClientId, GoogleClientSecret und MicrosoftClientId. Sie bleibt außerhalb von Git; der Build bettet die gemeinsame Desktop-Registrierung in die App ein.
-
-Desktop-Apps sind öffentliche OAuth-Clients. Ein eingebettetes Desktop-Client-Secret lässt sich nicht vertraulich halten. PKCE schützt den Codeaustausch. Die App enthält kein Mailpasswort des Herausgebers. Kontotoken und Nutzerdaten werden getrennt im verschlüsselten lokalen Profil gespeichert.
-
-Vorhandene Anmeldungen behalten beim Update ihre ursprüngliche Client-Zuordnung für die Token-Erneuerung.
-
-## Microsoft später
-
-Microsoft ist auf Wunsch für diesen Build zurückgestellt. Die Protokollunterstützung bleibt für eine spätere gemeinsame Herausgeberregistrierung erhalten. Auch dann brauchen Mailnutzer keine eigene Entwicklerregistrierung.
-
-Später: [Microsoft Entra App-Registrierung](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), persönliche und Organisationskonten, Plattform **Mobile und Desktopanwendungen**, Umleitungs-URI **http://localhost/**. Delegierte Exchange-Rechte IMAP.AccessAsUser.All und SMTP.Send sowie openid/profile/email/offline_access; Kontakte separat über Microsoft Graph Contacts.Read. Kein Client-Secret für die öffentliche Desktop-App. Die gemeinsame Anwendungs-ID wird per App-Update verteilt.
-
-Offizielle Quellen: [App registrieren](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app), [Loopback-Rückruf](https://learn.microsoft.com/en-us/entra/identity-platform/reply-url), [IMAP-/SMTP-OAuth](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth).
-
-Browser-Anmeldung und Postfachfreigabe sind getrennte Schritte. Nach der Browser-Rückkehr prüft zuMail auch IMAP und SMTP.
+Neue Installationen enthalten keine Arbeitsbereiche, Konten, Nachrichten oder Kontakte. Es werden keine Beispieldaten erzeugt. Installer und Portable-Paket enthalten keine Demo-Startoption.

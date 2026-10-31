@@ -2,15 +2,11 @@
 
 ## Arbeitsbereiche und Konten
 
-Über das Plus links einen Arbeitsbereich anlegen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zuMail, IMAP-/SMTP-Server und Ports zu ermitteln. Die ermittelten Werte lassen sich prüfen und ändern.
+Über das Plus links einen Arbeitsbereich anlegen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zuMail, IMAP-/SMTP-Server und Ports zu ermitteln. Serverwerte, Benutzername und Passwort bzw. App-Passwort eintragen und **Speichern & verbinden** wählen. TLS-Zertifikate werden geprüft.
 
-TLS-Zertifikate werden geprüft. Unterstützt ein Anbieter normale Passwörter nicht, sein App-Passwort oder die Browseranmeldung verwenden. Die Google-App-Registrierung ist in zuMail enthalten. Mailnutzer müssen keine Client-IDs oder Schlüssel erstellen oder eingeben.
+Browser-Anmeldung und OAuth-Einrichtung sind entfernt. Verwendet ein Anbieter ausschließlich Browser-OAuth, kann er in diesem Build nicht neu verknüpft werden. [Einrichtung und Grenzen](Anbieter-Anmeldung.md).
 
-**Gmail:** Anbieter auswählen; zuMail startet sofort die Anmeldung im Standardbrowser. Konto auswählen und den Zugriff bestätigen. Die Kontoübernahme setzt Server und Ports automatisch. Falls der Anbieter keine Mailadresse zurückgibt, wird nach der Browser-Anmeldung nur diese Adresse abgefragt. Zugangsdaten und Zwei-Faktor-Bestätigung erfolgen beim Anbieter. Nach einem Abbruch kann **Mit Google anmelden** die Anmeldung erneut starten.
-
-Googles Testmodus erlaubt nur vom Herausgeber eingetragene Testnutzer. Der Herausgeber muss die App für den allgemeinen Betrieb veröffentlichen und die erforderliche Gmail-Prüfung abschließen. Bei einer entsprechenden Google-Sperre keine eigene Entwicklerregistrierung anlegen, sondern den zuMail-Support kontaktieren.
-
-**Live/Outlook/Microsoft 365:** Die Microsoft-Anmeldung ist für diesen Build zurückgestellt und in der neuen Anbieterauswahl ausgeblendet. Eine spätere Integration verwendet die gemeinsame Registrierung des Herausgebers. Bestehende verknüpfte Konten behalten ihre ursprüngliche Anmeldezuordnung.
+Die App startet mit einem leeren Profil. Es werden keine Beispieldaten angelegt. Vorhandene Profile und Nachrichten bleiben erhalten.
 
 Mailprofile unter **Einstellungen → Konten & Profile** bestimmen Namen, Absenderadresse, Antwortadresse und Signatur. Der Versand nutzt die Verbindung des zugeordneten Kontos.
 
@@ -26,7 +22,7 @@ Unter **Regeln & Filter** Bedingungen und Aktionen kombinieren. Neue Nachrichten
 
 **Verfassen** öffnet den WYSIWYG-Editor. An, Cc und Bcc bieten Kontakte beim Tippen an. Mit Pfeiltasten und Eingabe übernehmen oder das Kontaktsymbol für die Auswahl öffnen. Mehrere Adressen werden durch Kommas getrennt.
 
-**Kontakte** verwaltet das Adressbuch des Arbeitsbereichs, importiert und exportiert vCards. Unter **Adressbücher** lässt sich die Synchronisierung je Anbieter aktivieren. Google und Microsoft verwenden eine separate Kontaktanmeldung mit Leserechten. CardDAV benötigt die direkte HTTPS-Adresse des Adressbuchs; Zurückschreiben ist ein eigener Schalter.
+**Kontakte** verwaltet das Adressbuch des Arbeitsbereichs, importiert und exportiert vCards. Unter **Adressbücher** lässt sich die Synchronisierung je Anbieter aktivieren. Neue Browser-Kontaktanmeldungen sind entfernt; bestehende Kontakte bleiben erhalten. CardDAV benötigt die direkte HTTPS-Adresse des Adressbuchs; Zurückschreiben ist ein eigener Schalter.
 
 ## Sicherheit und Sicherung
 

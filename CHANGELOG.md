@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.3
+
+- Browser-Anmeldung für Mail und Kontakte entfernt; manuelle IMAP-/SMTP-Einrichtung mit Passwort oder App-Passwort.
+- Gemeinsame Google-Registrierung aus dem Programm entfernt.
+- Beispieldaten-Generator und Demo-Modus entfernt. Neue Profile starten vollständig leer.
+- Keine Demo-Dateien oder Demo-Verknüpfungen in Installer und Portable-Paket. Installer entfernt alte Demo-Startoptionen beim Update.
+- Vorhandene Profile, Nachrichten und Kontakte bleiben erhalten. Neue Kontaktverbindungen über CardDAV, weiterhin vCard-Import/-Export.
+- 79 automatische Prüfungen sowie Installer- und Paketprüfung.
+
 ## 0.1.0-alpha.2
 
 - Gemeinsame Google-Desktop-Registrierung mit der App ausgeliefert. Mailnutzer brauchen keine eigenen OAuth-Schlüssel.
