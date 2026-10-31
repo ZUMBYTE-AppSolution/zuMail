@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.2
+
+- Gemeinsame Google-Desktop-Registrierung mit der App ausgeliefert. Mailnutzer brauchen keine eigenen OAuth-Schlüssel.
+- Gmail-Auswahl startet direkt die Anmeldung im Standardbrowser; nach Zustimmung automatische Kontoübernahme und Verbindungsprüfung.
+- Entwicklerkonfiguration aus dem normalen Anmeldeablauf und den Einstellungen entfernt.
+- Bestehende Mail- und Kontaktanmeldungen behalten ihre ursprüngliche Client-Zuordnung für die Token-Erneuerung.
+- Fehlende Microsoft-Herausgeberregistrierung wird durch ein App-Update ergänzt; keine Einrichtung durch Mailnutzer.
+- 86 automatische Prüfungen und separat geprüfter Windows-Installer.
+
+Google-Testmodus und öffentliche Gmail-Freigabe bleiben Aufgaben des Herausgebers. Die Microsoft-Anwendungs-ID liegt noch nicht vor. Keine echte Google-/Microsoft-Kontoanmeldung durchgeführt.
+
 ## 0.1.0-alpha.1
 
 Erster nutzbarer Windows-Alpha-Build.

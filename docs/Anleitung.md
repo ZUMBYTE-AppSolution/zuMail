@@ -4,11 +4,13 @@
 
 Über das Plus links einen Arbeitsbereich anlegen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zuMail, IMAP-/SMTP-Server und Ports zu ermitteln. Die ermittelten Werte lassen sich prüfen und ändern.
 
-TLS-Zertifikate werden geprüft. Unterstützt ein Anbieter normale Passwörter nicht, sein App-Passwort oder die Browseranmeldung verwenden. Google/Microsoft benötigen zunächst eine eigene registrierte Desktop-App: **Einstellungen → Sicherheit → Anbieter-Anmeldung vorbereiten**. In diesem Alpha-Build sind keine gemeinsamen Client-IDs vorgegeben.
+TLS-Zertifikate werden geprüft. Unterstützt ein Anbieter normale Passwörter nicht, sein App-Passwort oder die Browseranmeldung verwenden. Die Google-App-Registrierung ist in zuMail enthalten. Mailnutzer müssen keine Client-IDs oder Schlüssel erstellen oder eingeben.
 
-**Gmail und Live/Outlook:** Anbieter auswählen, **Mit Google/Microsoft anmelden** klicken und das Konto im Browser bestätigen. Die Kontoübernahme setzt Server und Ports automatisch. Falls der Anbieter keine Mailadresse zurückgibt, wird nach der Browser-Anmeldung nur diese Adresse abgefragt. Zugangsdaten zum Mailkonto werden im Browser des Anbieters eingegeben.
+**Gmail:** Anbieter auswählen; zuMail startet sofort die Anmeldung im Standardbrowser. Konto auswählen und den Zugriff bestätigen. Die Kontoübernahme setzt Server und Ports automatisch. Falls der Anbieter keine Mailadresse zurückgibt, wird nach der Browser-Anmeldung nur diese Adresse abgefragt. Zugangsdaten und Zwei-Faktor-Bestätigung erfolgen beim Anbieter. Nach einem Abbruch kann **Mit Google anmelden** die Anmeldung erneut starten.
 
-**Anmeldung einrichten** öffnet direkt in diesem Ablauf den Registrierungsassistenten. Google: OAuth-Client vom Typ Desktop-App und Testbenutzer einrichten. Microsoft: persönliche und Organisationskonten, Plattform Mobile/Desktop und Umleitungs-URI http://localhost/ eintragen; delegierte IMAP-/SMTP-Berechtigungen freigeben. Die Client-ID wird einmalig lokal hinterlegt.
+Googles Testmodus erlaubt nur vom Herausgeber eingetragene Testnutzer. Der Herausgeber muss die App für den allgemeinen Betrieb veröffentlichen und die erforderliche Gmail-Prüfung abschließen. Bei einer entsprechenden Google-Sperre keine eigene Entwicklerregistrierung anlegen, sondern den zuMail-Support kontaktieren.
+
+**Live/Outlook/Microsoft 365:** Die Microsoft-Anmeldung ist für diesen Build zurückgestellt und in der neuen Anbieterauswahl ausgeblendet. Eine spätere Integration verwendet die gemeinsame Registrierung des Herausgebers. Bestehende verknüpfte Konten behalten ihre ursprüngliche Anmeldezuordnung.
 
 Mailprofile unter **Einstellungen → Konten & Profile** bestimmen Namen, Absenderadresse, Antwortadresse und Signatur. Der Versand nutzt die Verbindung des zugeordneten Kontos.
 

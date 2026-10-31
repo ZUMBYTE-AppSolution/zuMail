@@ -1,16 +1,16 @@
 <p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zuMail"></p>
 <h1 align="center">zuMail</h1>
 <p align="center">Korrespondenz mit Charakter.</p>
-<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.1">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
+<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.2">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 <p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011%20x64-52d8f3?style=flat-square" alt="Windows x64"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/zuMail?include_prereleases&amp;style=flat-square&amp;label=Alpha" alt="Aktuelle Alpha"></p>
 
 **zuMail** ist ein nativer Windows-Mailclient von **Zumbyte - AppSolution**. Mehrere Arbeitsbereiche, Mailkonten, Profile und Kontakte bleiben übersichtlich erreichbar. Anthrazit oder Light Mode, eigene Akzentfarbe und verschiebbare Bereiche passen die Ansicht an deinen Alltag an.
 
 | Ausgabe | Download |
 | --- | --- |
-| Windows 10 / 11 x64 · Installer | [Setup herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.1/zuMail-0.1.0-alpha.1-win-x64-Setup.exe) |
-| Windows x64 · ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.1/zuMail-0.1.0-alpha.1-win-x64-Portable.zip) |
-| Prüfsummen | [SHA256SUMS.txt](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.1/SHA256SUMS.txt) |
+| Windows 10 / 11 x64 · Installer | [Setup herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.2/zuMail-0.1.0-alpha.2-win-x64-Setup.exe) |
+| Windows x64 · ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.2/zuMail-0.1.0-alpha.2-win-x64-Portable.zip) |
+| Prüfsummen | [SHA256SUMS.txt](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.2/SHA256SUMS.txt) |
 
 Die benötigte .NET-Laufzeit ist enthalten. Windows-Pakete sind derzeit unsigniert.
 
@@ -24,7 +24,13 @@ Die benötigte .NET-Laufzeit ist enthalten. Windows-Pakete sind derzeit unsignie
 
 Die Bilder zeigen ausschließlich getrennte Beispieldaten.
 
-## Aktuelles Changelog · Alpha 1
+## Aktuelles Changelog · Alpha 2
+
+- Gmail-Auswahl startet direkt die Browser-Anmeldung mit der gemeinsamen zuMail-Registrierung.
+- Keine Schlüssel-Eingabe oder eigene App-Registrierung für Mailnutzer.
+- Bestehende Anmeldungen behalten beim Update ihre ursprüngliche Client-Zuordnung.
+
+Bereits enthalten:
 
 - IMAP/SMTP, Arbeitsbereiche, Absenderprofile und automatische Servererkennung.
 - WYSIWYG-Nachrichten, Anhänge, Antworten, Weiterleiten und Entwürfe.
@@ -55,15 +61,15 @@ Die Bilder zeigen ausschließlich getrennte Beispieldaten.
 3. Anbieter auswählen oder über **Freie Eingabe** die Server automatisch ermitteln lassen.
 4. Für eine Vorschau ohne echte Konten die Verknüpfung **zuMail Beispieldaten** bzw. Beispieldaten.cmd verwenden.
 
-Google- und Microsoft-Browserlogin sind vorbereitet. Die eigene Anbieter-App ist noch zu registrieren; ohne diese Registrierung funktioniert deren OAuth-Anmeldung noch nicht. Direkte IMAP-/SMTP-Konten mit unterstütztem App-Passwort sowie CardDAV sind unabhängig davon eingerichtet. [Anmeldung und Grenzen](docs/Anleitung.md).
+Die gemeinsame Google-Registrierung ist enthalten. Mailnutzer brauchen keine eigenen OAuth-Schlüssel. Im Google-Testmodus dürfen nur eingetragene Testnutzer zugreifen; die öffentliche Freigabe und Gmail-Prüfung liegen beim Herausgeber. Microsoft ist für diesen Build zurückgestellt und in der Anbieterauswahl ausgeblendet. [Anmeldung und Grenzen](docs/Anleitung.md).
 
-Bei Gmail und Live/Outlook öffnet die Anbieterauswahl zuerst die Browser-Anmeldung. Server und Ports werden automatisch übernommen. Die manuelle Einrichtung ist eine separate Option; eine fehlende Client-ID lässt sich über **Anmeldung einrichten** ergänzen.
+**Konto verknüpfen → Gmail** öffnet direkt den Standardbrowser. Konto auswählen, den Zugriff bestätigen und zuMail übernimmt Server und Ports. Nach einem Abbruch lässt sich die Anmeldung erneut starten. Die manuelle Einrichtung ist eine separate Option.
 
-[Google und Microsoft für zuMail registrieren](docs/Anbieter-Anmeldung.md)
+[Informationen für den Herausgeber](docs/Anbieter-Anmeldung.md)
 
 ## Alpha-Stand und Daten
 
-**79 automatische Prüfungen** für Mailprotokolle, Regeln, Verschlüsselung, Sicherungen, Kontakte, WYSIWYG und Oberfläche. Anbieterzugriffe wurden mit lokalen Testantworten geprüft; echte Google-/Microsoft-Anmeldungen wurden mangels App-Registrierung noch nicht getestet.
+**86 automatische Prüfungen** für Mailprotokolle, Regeln, Verschlüsselung, Sicherungen, Kontakte, WYSIWYG und Oberfläche. Enthalten sind die mitgelieferte Google-Registrierung, der direkte Anmeldestart und die Migration bestehender Anmeldungen. Anbieterzugriffe wurden mit lokalen Testantworten geprüft; echte Google-/Microsoft-Anmeldungen wurden noch nicht getestet.
 
 Pro geöffnetem IMAP-Ordner lädt dieser Build die letzten 100 Nachrichten; die Suche verwendet geladene Nachrichten. Serverlöschungen entfernen noch keine Cachekopien. Lokale Ordner lassen die Servernachricht bestehen. Google/Microsoft-Kontakte werden übernommen, Änderungen bleiben lokal; CardDAV unterstützt optionales Zurückschreiben mit Konfliktschutz. CardDAV benötigt die direkte Adressbuch-URL.
 
