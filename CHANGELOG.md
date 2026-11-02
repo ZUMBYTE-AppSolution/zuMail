@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.0-alpha.4
+
+- Beim Öffnen werden Nachrichten sofort als gelesen markiert. Zähler aktualisieren sich direkt; ausstehende Serveränderungen werden verschlüsselt gespeichert und beim nächsten Abgleich nachgeholt.
+- Die obere Sidebar-Rubrik **Alle Mailkonten** bündelt die Ordner aller Konten des aktiven Arbeitsbereichs. Jedes Konto hat darunter eine eigene, einklappbare Ordnersektion mit gespeichertem Zustand.
+- HTML standardmäßig direkt im Lesebereich, mit mitgeliefertem Chromium/CEF statt Windows WebView2. Text lässt sich markieren und kopieren.
+- Externe Bilder nur nach Freigabe: einmalig oder dauerhaft für die konkrete Absenderadresse. Freigaben lassen sich unter Einstellungen → Nachrichten entfernen. HTML-Seitenskripte bleiben immer deaktiviert.
+- Rechtsklick oder Doppelklick öffnet Mails in einem eigenen Fenster, einschließlich Antworten, Weiterleiten und Speichern.
+- Anhänge öffnen sich in einer Vorschau mit **Speichern unter**: Bilder, PDF und Text; reine Inhaltsvorschau für DOCX/XLSX/PPTX, OpenDocument und ZIP. Keine Office-Anwendung oder Makros werden gestartet.
+- Eigener Business Chime bei neuen Nachrichten und Swoosh erst nach erfolgreicher SMTP-Annahme. Beide Töne separat abschaltbar und in den Einstellungen vorhörbar.
+
+117 automatische Prüfungen, Installer-/Deinstallationstest und Prüfung des tatsächlich installierten Chromium-Pakets. Keine OAuth-Browser-Anmeldung und keine Beispieldaten im Programm.
+
 ## 0.1.0-alpha.3
 
 - Browser-Anmeldung für Mail und Kontakte entfernt; manuelle IMAP-/SMTP-Einrichtung mit Passwort oder App-Passwort.

@@ -1,17 +1,15 @@
-# Prüfung · 0.1.0-alpha.3
+# Prüfung · 0.1.0-alpha.4
 
-- 79 automatische Prüfungen erfolgreich.
-- Tatsächlicher Startloader: neues Profil ohne Arbeitsbereiche, Nachrichten, Kontakte oder Verlauf; bestehendes verschlüsseltes Profil bleibt erhalten.
-- Keine eingebettete Herausgeberregistrierung, kein Demo-Generator und kein Demo-Modus in der Anwendung.
-- Keine interaktiven Browser-Anmeldefunktionen in Mail- und Kontaktdiensten. Gmail öffnet die manuelle App-Passwort-Einrichtung mit TLS-Serverdaten.
-- Öffnen bestehender Kontoeinstellungen verändert weder Zugangsdaten noch Token. Vorhandene Token können ohne Browser mit ihrer ursprünglichen Client-Zuordnung erneuert werden.
-- IMAP/SMTP gegen isolierten lokalen Testserver: Anmeldung, MIME-Empfang, HTML-Versand, Bcc-Schutz, Gesendet-Kopie, Flags, Serverordner, Verschieben, Regeln und IMAP IDLE.
-- DPAPI/AES-GCM: Speicher, Manipulation, Abschneiden; passwortgeschützte Backups, fehlerhafter Import und Erhalt der Quelldaten.
-- Kontakte: Arbeitsbereichstrennung, vCard-UTF-8 und unbekannte Felder, CardDAV-Konfliktschutz. Vorhandene Google-/Microsoft-Datenzuordnung mit Testantworten geprüft.
-- WYSIWYG, sichere Links, entfernte Skripte und Klartextalternative; kompakte Textfelder, Text außerhalb der Glow-Ebene, linksbündige Navigation und Menürahmen.
-- Installer unter Windows installiert und deinstalliert. EXE stimmt per SHA-256 mit dem Build überein. Frühere Demo-Startdateien und die Beispieldaten-Verknüpfung werden entfernt. Fremde Testdateien und Testprofil bleiben erhalten.
-- Portable-Inhalt mit Builddateien verglichen; keine vorgefertigten Profile, Demo-Startdateien oder Herausgeber-Konfiguration enthalten.
+- 117 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- Sofortige Gelesen-Markierung, PropertyChanged-Bindung, verschlüsselte Speicherung, ausstehende Änderungen bei Netzwerkfehlern und vorübergehend deaktivierten Konten; tatsächliches Seen-Flag am IMAP-Testserver.
+- Sammelordner über mehrere Konten, Arbeitsbereichstrennung, gleichnamige Ordner, gespeicherte Aufklappzustände und tatsächliche WPF-Nachrichtenliste.
+- Markierbarer Klartext mit nativem Kopierbefehl, eigenes Mailfenster und Rechtsklickmenü.
+- Tatsächlich mitgeliefertes Chromium: HTML-Inhalt, deaktivierte Seitenskripte und blockierte externe Requests, Dokumente über 2 MiB, gerenderte PDF-Seite anhand eines Bildnachweises. Kein Windows WebView2 erforderlich.
+- Externe Bilder nur nach Freigabe, Rasterbilder eingebettet, CSS-Bilder berücksichtigt, keine Browsercookies. Private Netzadressen, lokale Dateien, gefährliche Umleitungen und SVG-Antworten abgewiesen. Absendervertrauen gilt für die tatsächliche Adresse, nicht den Anzeigenamen.
+- Anhangvorschau und Speichern erhalten die dekodierten Originalbytes; Office-Inhaltsvorschau ohne Office-Prozess, externe XML-Entitäten abgewiesen, ausführbare Dateien nicht gestartet.
+- Benachrichtigungston und Versand-Swoosh als eigene PCM-Dateien; separate, gespeicherte Schalter. Audio wurde in der automatischen Prüfung nicht über Lautsprecher abgespielt.
+- Bestehende Prüfungen für MIME/SMTP/Bcc, Serverordner, Regeln, IMAP IDLE, WYSIWYG, Kontakte, DPAPI/AES-GCM und Sicherungen weiterhin erfolgreich.
+- Installer installiert und deinstalliert; vollständige Chromium-Ressourcen mit dem Build verglichen und Prüfprogramm gegen das installierte Paket ausgeführt. Fremde Testdateien und Profile erhalten. Keine Beispieldaten oder OAuth-Registrierung mitgeliefert.
+- Signierter Microsoft-Runtime-Download geprüft. Auf dem Prüfgerät war die passende Visual-C++-Komponente bereits vorhanden; eine Neuinstallation auf einer Referenz-VM wurde nicht durchgeführt.
 
-Alle Testkonten und Testdaten sind isolierte Prüffixtures und werden nicht mit der App ausgeliefert. Keine echten Postfächer verändert. Native Bildschirmbedienung wurde in diesem Update nicht durchgeführt; die Oberflächenprüfungen verwenden die WPF-Komponenten direkt. macOS/iOS, mobiler Push und OpenPGP/S/MIME sind nicht Teil dieses Builds.
-
-Maschinenlesbare Ergebnisse: verification.json und installer-verification.json im Release.
+Die Rendererprüfung erzeugt ausschließlich eigene, unsichtbare Testfenster. Es wurden keine Konten, Mails oder Dokumente des Benutzers in die Tests aufgenommen. macOS/iOS, mobiler Push und OpenPGP/S/MIME bleiben außerhalb dieses Builds. Maschinenlesbare Ergebnisse liegen als verification.json und installer-verification.json im Release.

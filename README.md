@@ -1,25 +1,28 @@
 <p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zuMail"></p>
 <h1 align="center">zuMail</h1>
 <p align="center">Korrespondenz mit Charakter.</p>
-<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.3">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
+<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.4">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 <p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011%20x64-52d8f3?style=flat-square" alt="Windows x64"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/zuMail?include_prereleases&amp;style=flat-square&amp;label=Alpha" alt="Aktuelle Alpha"></p>
 
 **zuMail** ist ein nativer Windows-Mailclient von **Zumbyte - AppSolution**. Mehrere Arbeitsbereiche, Mailkonten, Profile und Kontakte bleiben übersichtlich erreichbar. Anthrazit oder Light Mode, eigene Akzentfarbe und verschiebbare Bereiche passen die Ansicht an deinen Alltag an.
 
 | Ausgabe | Download |
 | --- | --- |
-| Windows 10 / 11 x64 · Installer | [Setup herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.3/zuMail-0.1.0-alpha.3-win-x64-Setup.exe) |
-| Windows x64 · ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.3/zuMail-0.1.0-alpha.3-win-x64-Portable.zip) |
-| Prüfsummen | [SHA256SUMS.txt](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.3/SHA256SUMS.txt) |
+| Windows 10 / 11 x64 · Installer | [Setup herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.4/zuMail-0.1.0-alpha.4-win-x64-Setup.exe) |
+| Windows x64 · ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.4/zuMail-0.1.0-alpha.4-win-x64-Portable.zip) |
+| Prüfsummen | [SHA256SUMS.txt](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.4/SHA256SUMS.txt) |
 
-Die benötigte .NET-Laufzeit ist enthalten. Windows-Pakete sind derzeit unsigniert.
+Die benötigte .NET-Laufzeit und Chromium sind enthalten; Windows WebView2 ist nicht erforderlich. Der Installer richtet die Microsoft Visual-C++-Komponente bei Bedarf direkt über Microsoft ein; dafür sind Internet und gegebenenfalls eine Windows-Freigabe erforderlich. Im portablen Paket liegt dafür Runtime-Setup.cmd. Windows-Pakete sind derzeit unsigniert.
 
-## Aktuelles Changelog · Alpha 3
+## Aktuelles Changelog · Alpha 4
 
-- Browser-Anmeldung entfernt; Konten werden mit Passwort oder App-Passwort eingerichtet.
-- Keine Beispieldaten, kein Demo-Generator und keine Demo-Verknüpfung im Release.
-- Neue Profile starten vollständig leer. Vorhandene Profile, Nachrichten und Kontakte bleiben erhalten.
-- Beim Update entfernt der Installer die früheren Demo-Startdateien und die Beispieldaten-Verknüpfung.
+- Beim Öffnen werden Nachrichten sofort als gelesen markiert. Zähler aktualisieren sich direkt; ausstehende Serveränderungen werden verschlüsselt gespeichert und beim nächsten Abgleich nachgeholt.
+- Die obere Sidebar-Rubrik **Alle Mailkonten** bündelt die Ordner aller Konten des aktiven Arbeitsbereichs. Jedes Konto hat darunter eine eigene, einklappbare Ordnersektion mit gespeichertem Zustand.
+- HTML standardmäßig direkt im Lesebereich, mit mitgeliefertem Chromium/CEF statt Windows WebView2. Text lässt sich markieren und kopieren.
+- Externe Bilder nur nach Freigabe: einmalig oder dauerhaft für die konkrete Absenderadresse. Freigaben lassen sich unter Einstellungen → Nachrichten entfernen. HTML-Seitenskripte bleiben immer deaktiviert.
+- Rechtsklick oder Doppelklick öffnet Mails in einem eigenen Fenster, einschließlich Antworten, Weiterleiten und Speichern.
+- Anhänge öffnen sich in einer Vorschau mit **Speichern unter**: Bilder, PDF und Text; reine Inhaltsvorschau für DOCX/XLSX/PPTX, OpenDocument und ZIP. Keine Office-Anwendung oder Makros werden gestartet.
+- Eigener Business Chime bei neuen Nachrichten und Swoosh erst nach erfolgreicher SMTP-Annahme. Beide Töne separat abschaltbar und in den Einstellungen vorhörbar.
 
 Bereits enthalten:
 
@@ -37,7 +40,7 @@ Bereits enthalten:
 
 | Bereich | Enthalten |
 | --- | --- |
-| Mail | TLS-geschützte IMAP-/SMTP-Verbindungen, lokale Suche, Anhänge, HTML-Leseansicht mit blockierten externen Inhalten. |
+| Mail | TLS-geschützte IMAP-/SMTP-Verbindungen, lokale Suche, Anhänge, Chromium-Leseansicht mit gesperrten Seitenskripten und freigabepflichtigen externen Bildern. |
 | Verfassen | Formatierung, Listen, Links, Tabellen, eingebettete Bilder, Signaturen und Klartextalternative. Versand acht Sekunden lang stoppen. |
 | Kontakte | Namen, mehrere Mailadressen und Telefonnummern, Firma, Anschriften, Daten, Foto, Notizen und weitere Felder. Wahlweise Anbieterabgleich. |
 | Regeln | Absender, Betreff, Inhalt, Empfänger und Anhänge kombinieren. Verschieben, markieren, Schlagwörter und Spamaktionen; Vorschau und Verlauf. |
@@ -56,7 +59,7 @@ Die App startet ohne vorgefertigte Konten, Mails oder Kontakte. Es gibt keinen D
 
 ## Alpha-Stand und Daten
 
-**79 automatische Prüfungen** für Mailprotokolle, Regeln, Verschlüsselung, Sicherungen, Kontakte, WYSIWYG, manuelle Kontoeinrichtung und leeren Erststart. Zusätzlich Installation und Deinstallation einschließlich Entfernung alter Demo-Startoptionen geprüft. Protokollprüfungen verwenden isolierte Testkonten; diese Testdaten gehören nicht zum ausgelieferten Programm.
+**117 automatische Prüfungen** einschließlich echter Chromium-Darstellung, Skript-/Netzwerksperre, großer HTML-Nachrichten, PDF-Ausgabe, Gelesen-Zählern und gespeicherten Sidebar-Zuständen. Installer und portable Ausgabe lokal erstellt; das installierte Paket wird nochmals mit dem Prüfprogramm getestet. Prüfdaten werden nicht mit der App ausgeliefert.
 
 Pro geöffnetem IMAP-Ordner lädt dieser Build die letzten 100 Nachrichten; die Suche verwendet geladene Nachrichten. Serverlöschungen entfernen noch keine Cachekopien. Lokale Ordner lassen die Servernachricht bestehen. Neue Kontaktverbindungen verwenden CardDAV mit optionalem Zurückschreiben und Konfliktschutz. Bereits bestehende Anbieteranmeldungen bleiben gespeichert; neue Browser-Kontaktanmeldungen werden nicht angeboten. CardDAV benötigt die direkte Adressbuch-URL.
 
