@@ -67,3 +67,14 @@ Benachrichtigungen unter Windows verwenden den laufenden Client bzw. Hintergrund
 Chromium/CEF und .NET sind enthalten. Falls die Microsoft-Visual-C++-Komponente fehlt, übernimmt der Installer die Einrichtung über einen Download direkt von Microsoft und prüft dessen digitale Signatur. Portable Nutzer können Runtime-Setup.cmd ausführen; die Einrichtung erfordert gegebenenfalls eine Windows-Administratorfreigabe. Das tatsächliche Neuinstallieren dieser Systemkomponente wurde auf dem Prüfgerät nicht benötigt.
 
 Vollständige Drittanbieterhinweise liegen im Paket unter licenses/, einschließlich der Hinweise der tatsächlich ausgelieferten Chromium-Version. Chromium, CEF und CefSharp gestatten kommerzielle Nutzung unter ihren jeweiligen Lizenzbedingungen.
+
+## Konversationsansicht und Ungelesen-Zähler
+
+- Konversationsansicht standardmäßig aktiv: zusammengefasste Nachrichtenliste und auswählbarer Verlauf im Lesebereich, einschließlich bereits geladener Antworten aus Gesendet.
+- Unter Einstellungen → Nachrichten lässt sich die Konversationsansicht abschalten; danach erscheinen Mails wieder einzeln.
+- Zuordnung über Message-ID, In-Reply-To und References. Gleiche Betreffzeilen allein werden nicht zusammengelegt. Arbeitsbereiche bleiben getrennt; Kontoansichten bleiben auf ihr Konto begrenzt.
+- Vorhandene verschlüsselte Nachrichten werden einmalig auf Antwortverweise geprüft. Die gespeicherten Originalmails bleiben erhalten.
+- Alle Ordnerzähler zeigen ausschließlich ungelesene Nachrichten, unabhängig von der Konversationsgruppierung. Kräftige Pill-Badges verwenden die eingestellte Akzentfarbe und kontrastreiche, fette Ziffern; Nullwerte bleiben ausgeblendet.
+- Beim Öffnen einer Konversationsnachricht wird nur diese als gelesen markiert. Kontoköpfe zeigen weiterhin ungelesene Mails im jeweiligen Posteingang.
+
+Konversationen verwenden lokal geladene Nachrichten des aktiven Arbeitsbereichs. Eine Kontoansicht berücksichtigt nur dieses Konto; Spam und Papierkorb erscheinen nicht als zusätzlicher Verlauf in normalen Ordnern. Antworten werden über ihre Mail-Header zugeordnet. Ohne Antwortverweise bleibt eine Mail einzeln. Entwürfe bleiben separat. Die Suche und Filter bestimmen, welche Konversationen angezeigt werden; zugehörige geladene Nachrichten bleiben im Verlauf erreichbar. Die Ordnerzähler zählen ungelesene Mails, keine Konversationen.

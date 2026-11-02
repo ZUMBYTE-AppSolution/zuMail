@@ -1,6 +1,8 @@
-# Prüfung · 0.1.0-alpha.4
+# Prüfung · 0.1.0-alpha.5
 
-- 117 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- 143 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- Konversationsketten mit gesendeten Antworten, fehlenden Eltern, Zyklen, gleichen Betreffzeilen und getrennten Arbeitsbereichen. Einmalige Bestandsindexierung erhält die originalen verschlüsselten MIME-Dateien.
+- Tatsächliche WPF-Verlaufsauswahl, Abschalten in den Einstellungen, sofortige Zähleränderung je geöffneter Nachricht und fette Pill-Badges.
 - Sofortige Gelesen-Markierung, PropertyChanged-Bindung, verschlüsselte Speicherung, ausstehende Änderungen bei Netzwerkfehlern und vorübergehend deaktivierten Konten; tatsächliches Seen-Flag am IMAP-Testserver.
 - Sammelordner über mehrere Konten, Arbeitsbereichstrennung, gleichnamige Ordner, gespeicherte Aufklappzustände und tatsächliche WPF-Nachrichtenliste.
 - Markierbarer Klartext mit nativem Kopierbefehl, eigenes Mailfenster und Rechtsklickmenü.
