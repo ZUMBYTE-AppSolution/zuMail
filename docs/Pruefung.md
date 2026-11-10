@@ -1,6 +1,6 @@
 # Prüfung · 0.1.0-alpha.7
 
-- 201 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- 202 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
 - Native WPF-Drop-Ereignisse und Auswahl beim Ansetzen des Ziehens; tatsächliches IMAP MOVE für mehrere Nachrichten, korrekte Ziel-UIDs, keine Duplikate nach erneuter Synchronisierung, lokale Zuordnung und Upload importierter Mails. Abgelehnte Einzelaktionen und Verbindungsfehler erhalten betroffene Originale. Kein automatisierter freihändiger Maus-Parcours.
 - Neues Raster-Icon in PNG-Größen von 16 bis 1024 Pixeln und mehrstufigem ICO; transparente Außenkante und Darstellung bei kleiner Auflösung visuell geprüft.
 - Konversationsketten mit gesendeten Antworten, fehlenden Eltern, Zyklen, gleichen Betreffzeilen und getrennten Arbeitsbereichen. Einmalige Bestandsindexierung erhält die originalen verschlüsselten MIME-Dateien.

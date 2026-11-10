@@ -9,7 +9,7 @@
 - Zielmarkierung und automatisches Scrollen unterstützen das Ziehen in der Sidebar. Die bestehende Sortierung über Ziehgriffe bleibt verfügbar.
 - Neues rasterbasiertes App-Icon: reduzierter Cyan-Brief mit integriertem Z auf Anthrazit, dezenter Glow, transparente Außenkante und geglättete PNG-/ICO-Größen für App und Installer.
 
-201 automatische Prüfungen, einschließlich nativer WPF-Drop-Ereignisse, IMAP-MOVE, Mehrfachauswahl, erneuter Synchronisierung, lokalen Zielen, Upload und Verbindungsfehlern. Installer und portable Ausgabe geprüft. Neue Profile starten leer.
+202 automatische Prüfungen, einschließlich nativer WPF-Drop-Ereignisse, IMAP-MOVE, Mehrfachauswahl, erneuter Synchronisierung, lokalen Zielen, Upload und Verbindungsfehlern. Installer und portable Ausgabe geprüft. Neue Profile starten leer.
 
 ## 0.1.0-alpha.6
 
