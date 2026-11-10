@@ -111,3 +111,12 @@ Serverordner werden mit dem Mailserver abgeglichen; lokale Ordner erhalten das S
 Einstellungen sind in aufklappbaren Kategorien organisiert. Die Suche findet auch Unterseiten anhand ihrer Optionen, zum Beispiel Signatur oder Lautstärke. Mit Strg+F die Einstellungssuche fokussieren. Fertig speichert und schließt die Einstellungen. Dark/Light Mode und die Akzentfarbe unter Darstellung → Erscheinungsbild wechseln.
 
 Unter App → Benachrichtigungen steuert ein gemeinsamer Regler die Lautstärke von Business Chime und Versand-Swoosh. Beide Audiodateien sind deutlich leiser abgestimmt. Bei 0 % bleiben beide stumm; die Töne lassen sich weiterhin einzeln ausschalten. Die Vorschau verwendet denselben Pegel wie der spätere App-Ton. Die Windows-Lautstärke bleibt unverändert.
+
+
+## Nachricht verfassen
+
+Versandkonto und Absenderprofil stehen oben direkt zur Auswahl. Über Cc und Bcc die zusätzlichen Empfängerfelder öffnen. Belegte Felder lassen sich erst nach Entfernen ihrer Empfänger ausblenden; gespeicherte Entwürfe zeigen vorhandene Cc-/Bcc-Adressen automatisch. Kontakte auswählen oder beim Tippen Vorschläge übernehmen.
+
+Anhänge über Anhang hinzufügen oder Dateien auf das Verfassen-Fenster ziehen. Dateikarten zeigen die Anhänge und bieten eine Entfernen-Aktion. Linkadresse und angezeigten Linktext gemeinsam eingeben; Textfarben über Farbfelder oder Hex-Wert wählen. Senden oder Strg+Enter startet den Versand. Während der Widerrufszeit stoppt Senden stoppen den Vorgang.
+
+Beim Schließen einer geänderten Nachricht ausdrücklich Entwurf speichern, Verwerfen oder Weiter bearbeiten wählen. Das Schließsymbol der Rückfrage bricht den Schließwunsch ab. Alle zuMail-eigenen Dialoge verwenden den gemeinsamen Fensterrahmen; Dateien werden über die aktuelle Windows-Dateiauswahl gewählt. Scrollleisten erscheinen als sehr schmale 2-Pixel-Linien.

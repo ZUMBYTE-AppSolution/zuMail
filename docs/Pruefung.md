@@ -1,6 +1,10 @@
-# Prüfung · 0.1.0-alpha.8
+# Prüfung · 0.1.0-alpha.9
 
-- 220 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- 241 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- Verfassen: native Konto-/Profilwahl, ein-/ausblendbare Cc-/Bcc-Felder, Entwurfswiederherstellung einschließlich optionaler Empfänger, Anhangkarten und erzeugte MIME-Daten. Kompakte Fenstergröße mit Anhängen geprüft.
+- Verzögerter Versand: Bearbeitung während des Wartens gesperrt, Abbrechen ohne Serverkontakt und danach echter SMTP-Versand aus dem WPF-Fenster; Bcc-Empfänger werden übertragen, ihre Header bleiben verborgen.
+- Dialoge: gemeinsamer Fensterrahmen, ausdrückliche Speichern-/Verwerfen-/Abbrechen-Antworten, sicheres Abbrechen über den Schließbefehl und validierte Linkeingabe. App-Assembly und Runtime-Helfer verwenden keine klassischen System-Meldungsboxen.
+- Scrollleisten: tatsächliche 2-Pixel-Darstellung mit 8-Pixel-Greiffläche und unverändertem Scrollabgleich.
 - Einstellungen: reale Unterseiten, Suche mit leerem Ergebnis, Kategoriezuordnung, Wechsel zwischen neutralem Dark/Light Mode und gespeicherte gemeinsame Tonlautstärke.
 - Kontextmenüs: Aktionsgruppen, tatsächlich gerenderte Warnfarbe, schmaler Rahmen, unverwischte Inhaltsebene und funktionierende Sammelaktion für Lesen. Menü- und Einstellungsansichten als native WPF-Renderings kontrolliert.
 - Audiodateien: abgesenkte Spitzen unter -20 dBFS und geringer Unterschied der mittleren Signalpegel; digitale Lautstärkeskalierung, Stummschaltung und Schutz vor ungültigen gespeicherten Werten. Beide Synthesedateien nutzen denselben spektral gewichteten Zielpegel. Keine Lautsprecher- oder Hörprüfung automatisiert.

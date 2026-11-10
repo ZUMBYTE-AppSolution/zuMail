@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.9
+
+- Neues Verfassen-Fenster mit klar getrennten Bereichen für Versandkonto und Profil, Empfänger, Betreff, Nachricht und Anhänge. Mehr Platz für den Nachrichtentext, kompakte Formatierungsleiste und direkt erreichbare Versandaktionen.
+- Cc und Bcc bei Bedarf einblenden. Vorhandene Empfänger bleiben sichtbar; beim Öffnen von Entwürfen werden belegte Cc-/Bcc-Felder automatisch eingeblendet. Kontakteauswahl und Livesuche bleiben verfügbar.
+- Anhänge als kompakte Dateikarten mit Entfernen-Aktion; mehrfach hinzugefügte Dateien werden zusammengefasst. Beim verzögerten Senden bleiben Absender, Inhalt und Anhänge geschützt, bis der Versand gestoppt oder abgeschlossen ist.
+- Einheitliche zuMail-Fenstergestaltung für Verfassen, Einstellungen, Konten, Kontakte, Vorschauen und Bearbeitungsdialoge. Eigene Rückfragen, Fehler- und Eingabefenster ersetzen klassische System-Meldungsboxen. Windows-Dateiauswahlen bleiben die aktuellen systemeigenen Dateidialoge.
+- Linkadresse und Linktext in einem Fenster bearbeiten; Textfarbe über Farbfelder oder eigene Hex-Eingabe wählen. Nicht erlaubte Linktypen werden direkt im Dialog abgewiesen.
+- Sichtbare Scrollleisten nur 2 Pixel breit, mit größerer unsichtbarer Greiffläche in WPF. Sie erscheinen weiterhin nur im aktiven Bereich; auch HTML-Nachrichten verwenden 2-Pixel-Scrollleisten.
+
+241 automatische Prüfungen. Nativer SMTP-Versand aus dem neuen Verfassen-Fenster, Bcc-Schutz, Entwürfe, Abbruch, Dialogantworten und kompakte Fenstergröße geprüft. Installer installiert/deinstalliert und dieselben Prüfungen gegen das installierte Paket ausgeführt. Neue Profile starten leer.
+
 ## 0.1.0-alpha.8
 
 - Einheitliche Oberflächen, Abstände, Rundungen und Fokuszustände in Mailansicht, Einstellungen und Dialogen. Anthrazit und Light Mode bleiben neutral; Akzentfarben markieren Auswahl und Aktionen.
