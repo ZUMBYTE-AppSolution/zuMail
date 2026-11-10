@@ -78,3 +78,22 @@ Vollständige Drittanbieterhinweise liegen im Paket unter licenses/, einschließ
 - Beim Öffnen einer Konversationsnachricht wird nur diese als gelesen markiert. Kontoköpfe zeigen weiterhin ungelesene Mails im jeweiligen Posteingang.
 
 Konversationen verwenden lokal geladene Nachrichten des aktiven Arbeitsbereichs. Eine Kontoansicht berücksichtigt nur dieses Konto; Spam und Papierkorb erscheinen nicht als zusätzlicher Verlauf in normalen Ordnern. Antworten werden über ihre Mail-Header zugeordnet. Ohne Antwortverweise bleibt eine Mail einzeln. Entwürfe bleiben separat. Die Suche und Filter bestimmen, welche Konversationen angezeigt werden; zugehörige geladene Nachrichten bleiben im Verlauf erreichbar. Die Ordnerzähler zählen ungelesene Mails, keine Konversationen.
+
+## Oberfläche und Bedienung ab Alpha 6
+
+- Überarbeitete Mailansicht mit abgestimmten Innenabständen, ruhigen Kartenflächen und kompakter Sidebar. Dark/Light Mode und die frei wählbare Akzentfarbe bleiben verfügbar.
+- Schmale 4-Pixel-Scrollbars erscheinen nur im aktiven Bereich bei Maus, Tastaturfokus oder Ziehen. Die Inhaltsbreite bleibt beim Einblenden gleich; auch HTML-Mails verwenden schmale Scrollbars.
+- Die separate Arbeitsbereichsleiste entfällt. Oben in der Sidebar stehen Arbeitsbereichsauswahl und „Neuer Arbeitsbereich“ zur Verfügung. Einstellungen sind in der oberen Werkzeugleiste erreichbar.
+
+- Einstellungen in aufklappbaren Gruppen und einzelnen Unterseiten, mit Suche, klaren Einstellungsgruppen und einheitlichen Schaltern.
+- Windows-Autostart und minimierter Autostart separat einstellbar unter App → Start & Hintergrund. Der normale Programmstart bleibt sichtbar; eine aktive PIN-Sperre bleibt beim minimierten Start erhalten.
+- Konten und Ordner über Ziehgriffe in der Sidebar umsortieren, einschließlich automatischem Scrollen beim Ziehen. Die Reihenfolge wird verschlüsselt gespeichert. Ordner auf dem Mailserver werden dadurch nicht umbenannt oder verschoben.
+- Versandkonto und zugehöriges Absenderprofil sind in jeder neuen Nachricht, Antwort und Weiterleitung direkt auswählbar. Antworten starten mit dem ursprünglichen Empfängerkonto.
+- Mehrfachauswahl per Auswahlmodus, Strg oder Umschalt; alle auswählen, gelesen/ungelesen markieren, markieren, verschieben, archivieren oder in den Papierkorb legen. Sammelaktionen betreffen nur passende Mails im aktuellen Ordner, einschließlich mehrerer Konten bei Lesen/Archivieren; konversationsbezogene Antworten aus anderen Ordnern bleiben erhalten. Verschieben erfolgt innerhalb eines Kontos.
+- Portable Chromium-Prüfung berücksichtigt die mitgelieferte .NET-Laufzeit auch ohne systemweite .NET-Installation.
+
+**Auswählen:** Den Auswahlknopf neben den Listenfiltern nutzen oder Strg/Umschalt beim Klicken halten. In der Auswahlleiste stehen die Sammelaktionen bereit. Mit Fertig oder Esc die Auswahl beenden. Die Auswahl allein markiert keine Mail als gelesen.
+
+**Windows-Start:** Einstellungen → App → Start & Hintergrund. Autostart bei Windows-Anmeldung registriert die aktuelle Programmdatei für dieses Benutzerkonto. Autostart minimiert ist eine unabhängige Vorgabe für den automatischen Start. Ein normales Öffnen der App bleibt sichtbar. Für die portable Ausgabe muss der Ordner dauerhaft an seinem Platz bleiben. Die Deinstallation entfernt nur einen Autostart-Eintrag, der auf genau diese Installation zeigt. Windows kann den Start verzögern oder einen Eintrag in seinen eigenen Starteinstellungen deaktivieren.
+
+**Reihenfolge:** Konten am Griff der Kopfzeile ziehen; Ordner am Griff links vom Namen. Die Markierung zeigt, ob vor oder nach dem Ziel eingefügt wird. Ordner lassen sich innerhalb ihres Kontos anordnen. Den ursprünglichen Ordneraufbau unter Einstellungen → Darstellung → Layout & Sidebar wiederherstellen.

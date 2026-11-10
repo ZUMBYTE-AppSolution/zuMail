@@ -1,8 +1,13 @@
-# Prüfung · 0.1.0-alpha.5
+# Prüfung · 0.1.0-alpha.6
 
-- 143 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- 176 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
 - Konversationsketten mit gesendeten Antworten, fehlenden Eltern, Zyklen, gleichen Betreffzeilen und getrennten Arbeitsbereichen. Einmalige Bestandsindexierung erhält die originalen verschlüsselten MIME-Dateien.
 - Tatsächliche WPF-Verlaufsauswahl, Abschalten in den Einstellungen, sofortige Zähleränderung je geöffneter Nachricht und fette Pill-Badges.
+- Arbeitsbereichswechsel über das tatsächliche Dropdown mit Erstellen-Eintrag, schmale ausgeblendete Scrollbars und Scrolloffset-Synchronisierung des Overlay-Templates.
+- Neue Oberfläche als WPF-Renderings in Dark/Light Mode, verschachtelte Einstellungen und Composer kontrolliert. Reale Konten bleiben unberührt.
+- Autostart-Registrierung in isoliertem HKCU-Testschlüssel, unabhängige Minimierung und PIN-Sperre beim minimierten Start; kein echter Windows-Neustart oder Ab-/Anmeldevorgang automatisiert.
+- Konten-/Ordnersortierung mit Persistenz und Bereichsschutz; Sammelauswahl liest nicht automatisch, Sammelaktionen bewahren konversationsbezogene Mails anderer Ordner und verhindern kontenfremdes Verschieben.
+- Tatsächliche Konto-/Profilwahl beim Verfassen und Antworten, inklusive erzeugtem MIME-Absender und erhaltenen Antwortverweisen.
 - Sofortige Gelesen-Markierung, PropertyChanged-Bindung, verschlüsselte Speicherung, ausstehende Änderungen bei Netzwerkfehlern und vorübergehend deaktivierten Konten; tatsächliches Seen-Flag am IMAP-Testserver.
 - Sammelordner über mehrere Konten, Arbeitsbereichstrennung, gleichnamige Ordner, gespeicherte Aufklappzustände und tatsächliche WPF-Nachrichtenliste.
 - Markierbarer Klartext mit nativem Kopierbefehl, eigenes Mailfenster und Rechtsklickmenü.
