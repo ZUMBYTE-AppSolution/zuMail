@@ -2,7 +2,7 @@
 
 ## Arbeitsbereiche und Konten
 
-Über das Plus links einen Arbeitsbereich anlegen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zuMail, IMAP-/SMTP-Server und Ports zu ermitteln. Serverwerte, Benutzername und Passwort bzw. App-Passwort eintragen und **Speichern & verbinden** wählen. TLS-Zertifikate werden geprüft.
+Oben in der Sidebar das Arbeitsbereichsmenü öffnen und **Neuer Arbeitsbereich** wählen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zuMail, IMAP-/SMTP-Server und Ports zu ermitteln. Serverwerte, Benutzername und Passwort bzw. App-Passwort eintragen und **Speichern & verbinden** wählen. TLS-Zertifikate werden geprüft.
 
 Browser-Anmeldung und OAuth-Einrichtung sind entfernt. Verwendet ein Anbieter ausschließlich Browser-OAuth, kann er in diesem Build nicht neu verknüpft werden. [Einrichtung und Grenzen](Anbieter-Anmeldung.md).
 
@@ -24,7 +24,7 @@ HTML wird standardmäßig im Detailbereich angezeigt. Mit **HTML / Text** lässt
 
 Auf einen Anhang klicken: Vorschaufenster mit **Speichern unter**. Unterstützt werden übliche Rasterbilder, PDF, Text und EML. DOCX/XLSX/PPTX sowie OpenDocument zeigen eine Inhaltsvorschau; ZIP zeigt seine Dateiliste. Makros und enthaltene Programme werden nicht ausgeführt. Office-Layouttreue und ältere binäre Office-Formate sind nicht enthalten. Die Vorschau ist auf 32 MiB begrenzt; Speichern bleibt auch bei größeren oder nicht unterstützten Dateien möglich.
 
-Unter **Einstellungen → Allgemein** lassen sich **Business Chime** für neue Nachrichten und **Swoosh** nach erfolgreichem Versand unabhängig abschalten oder vorhören. Der Versandton ertönt nach Annahme durch den SMTP-Server, nicht während des Widerruf-Countdowns oder bei einem Fehler.
+Unter **Einstellungen → App → Benachrichtigungen** lassen sich **Business Chime** für neue Nachrichten und **Swoosh** nach erfolgreichem Versand unabhängig abschalten oder vorhören. Der Versandton ertönt nach Annahme durch den SMTP-Server, nicht während des Widerruf-Countdowns oder bei einem Fehler.
 
 ## Ordner, Regeln und Spam
 
@@ -48,7 +48,9 @@ Unter **Import & Export** Nachrichten bzw. eine passwortgeschützte Sicherung ex
 
 ## Updates und Deinstallation
 
-**Einstellungen → Updates** bietet Alpha- und stabile Versionen. Der Installer wird aus dem offiziellen Release-Repository bezogen und vor dem Start mit SHA-256 geprüft. Windows-Pakete sind noch nicht Authenticode-signiert.
+**Einstellungen → Informationen → Updates** bietet Alpha- und stabile Versionen. Der Installer wird aus dem offiziellen Release-Repository bezogen und vor dem Start mit SHA-256 geprüft. Windows-Pakete sind noch nicht Authenticode-signiert.
+
+Nach **Herunterladen** zeigt das Updatefenster Prozent, Datenmenge, Geschwindigkeit und geschätzte Restzeit. Ist die Dateigröße nicht bekannt, bleibt die geladene Datenmenge sichtbar. **Abbrechen** entfernt den unvollständigen Download; danach ist ein neuer Versuch möglich. Nach der Dateiprüfung **Jetzt installieren** wählen. Der Installer wartet auf das Beenden von zuMail und öffnet nach erfolgreicher Installation wieder das bisherige Profil, einschließlich einer eingerichteten PIN-Sperre.
 
 Deinstallation entfernt Programm und Verknüpfungen, erhält jedoch Profildaten. Im portablen Paket bedeutet „portabel“ Start ohne Installation; das Profil bleibt standardmäßig im Windows-Benutzerverzeichnis.
 
@@ -82,7 +84,7 @@ Konversationen verwenden lokal geladene Nachrichten des aktiven Arbeitsbereichs.
 ## Oberfläche und Bedienung ab Alpha 6
 
 - Überarbeitete Mailansicht mit abgestimmten Innenabständen, ruhigen Kartenflächen und kompakter Sidebar. Dark/Light Mode und die frei wählbare Akzentfarbe bleiben verfügbar.
-- Schmale 4-Pixel-Scrollbars erscheinen nur im aktiven Bereich bei Maus, Tastaturfokus oder Ziehen. Die Inhaltsbreite bleibt beim Einblenden gleich; auch HTML-Mails verwenden schmale Scrollbars.
+- Schmale 2-Pixel-Scrollbars erscheinen nur im aktiven Bereich bei Maus, Tastaturfokus oder Ziehen. Die Inhaltsbreite bleibt beim Einblenden gleich; auch HTML-Mails verwenden schmale Scrollbars.
 - Die separate Arbeitsbereichsleiste entfällt. Oben in der Sidebar stehen Arbeitsbereichsauswahl und „Neuer Arbeitsbereich“ zur Verfügung. Einstellungen sind in der oberen Werkzeugleiste erreichbar.
 
 - Einstellungen in aufklappbaren Gruppen und einzelnen Unterseiten, mit Suche, klaren Einstellungsgruppen und einheitlichen Schaltern.
@@ -120,3 +122,13 @@ Versandkonto und Absenderprofil stehen oben direkt zur Auswahl. Über Cc und Bcc
 Anhänge über Anhang hinzufügen oder Dateien auf das Verfassen-Fenster ziehen. Dateikarten zeigen die Anhänge und bieten eine Entfernen-Aktion. Linkadresse und angezeigten Linktext gemeinsam eingeben; Textfarben über Farbfelder oder Hex-Wert wählen. Senden oder Strg+Enter startet den Versand. Während der Widerrufszeit stoppt Senden stoppen den Vorgang.
 
 Beim Schließen einer geänderten Nachricht ausdrücklich Entwurf speichern, Verwerfen oder Weiter bearbeiten wählen. Das Schließsymbol der Rückfrage bricht den Schließwunsch ab. Alle zuMail-eigenen Dialoge verwenden den gemeinsamen Fensterrahmen; Dateien werden über die aktuelle Windows-Dateiauswahl gewählt. Scrollleisten erscheinen als sehr schmale 2-Pixel-Linien.
+
+## Kontaktverwaltung und Farbauswahl ab Alpha 10
+
+**Kontakte** öffnet Adressbücher, Kontaktliste und Details nebeneinander. Die Suche berücksichtigt auch Firma, Anschrift, Telefonnummern und Notizen. Ein Adressbuch links begrenzt die Ansicht. **Mail schreiben** öffnet eine Nachricht an den ausgewählten Kontakt.
+
+**Neuer Kontakt** bzw. **Bearbeiten** bietet die Bereiche Person, Kontaktdaten, Adressen und Weitere Angaben. Zusätzliche Mailadressen, Telefonnummern und Anschriften über die jeweilige Hinzufügen-Schaltfläche anlegen. Änderungen gelten erst mit **Speichern**; **Abbrechen** erhält den bisherigen Stand. **Lokal ausblenden** entfernt einen Kontakt aus der lokalen Ansicht und löscht ihn nicht beim Anbieter.
+
+**Importieren** liest vCard-Dateien; **Exportieren** exportiert die aktuell gefilterte Ansicht. Im Rechtsklickmenü lässt sich auch nur der ausgewählte Kontakt exportieren. Unter **Adressbücher** lokale Namen und bestehende Verbindungen bearbeiten oder CardDAV hinzufügen. **Synchronisieren** gleicht aktivierte Adressbücher der aktuellen Ansicht ab.
+
+Unter **Einstellungen → Darstellung → Erscheinungsbild** öffnet **Farbe auswählen** den Colorpicker. In der Farbfläche Sättigung und Helligkeit wählen, am Regler den Farbton einstellen oder einen Hex-Wert wie #52D8F3 eingeben. Erst **Übernehmen** bestätigt die Farbe. Der gleiche Picker steht beim Verfassen für Textfarben bereit.

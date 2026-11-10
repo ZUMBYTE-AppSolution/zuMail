@@ -1,31 +1,33 @@
-# Prüfung · 0.1.0-alpha.9
+# Prüfung · 0.1.0-alpha.10
 
-- 241 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
-- Verfassen: native Konto-/Profilwahl, ein-/ausblendbare Cc-/Bcc-Felder, Entwurfswiederherstellung einschließlich optionaler Empfänger, Anhangkarten und erzeugte MIME-Daten. Kompakte Fenstergröße mit Anhängen geprüft.
-- Verzögerter Versand: Bearbeitung während des Wartens gesperrt, Abbrechen ohne Serverkontakt und danach echter SMTP-Versand aus dem WPF-Fenster; Bcc-Empfänger werden übertragen, ihre Header bleiben verborgen.
-- Dialoge: gemeinsamer Fensterrahmen, ausdrückliche Speichern-/Verwerfen-/Abbrechen-Antworten, sicheres Abbrechen über den Schließbefehl und validierte Linkeingabe. App-Assembly und Runtime-Helfer verwenden keine klassischen System-Meldungsboxen.
-- Scrollleisten: tatsächliche 2-Pixel-Darstellung mit 8-Pixel-Greiffläche und unverändertem Scrollabgleich.
-- Einstellungen: reale Unterseiten, Suche mit leerem Ergebnis, Kategoriezuordnung, Wechsel zwischen neutralem Dark/Light Mode und gespeicherte gemeinsame Tonlautstärke.
-- Kontextmenüs: Aktionsgruppen, tatsächlich gerenderte Warnfarbe, schmaler Rahmen, unverwischte Inhaltsebene und funktionierende Sammelaktion für Lesen. Menü- und Einstellungsansichten als native WPF-Renderings kontrolliert.
-- Audiodateien: abgesenkte Spitzen unter -20 dBFS und geringer Unterschied der mittleren Signalpegel; digitale Lautstärkeskalierung, Stummschaltung und Schutz vor ungültigen gespeicherten Werten. Beide Synthesedateien nutzen denselben spektral gewichteten Zielpegel. Keine Lautsprecher- oder Hörprüfung automatisiert.
-- Native WPF-Drop-Ereignisse und Auswahl beim Ansetzen des Ziehens; tatsächliches IMAP MOVE für mehrere Nachrichten, korrekte Ziel-UIDs, keine Duplikate nach erneuter Synchronisierung, lokale Zuordnung und Upload importierter Mails. Abgelehnte Einzelaktionen und Verbindungsfehler erhalten betroffene Originale. Kein automatisierter freihändiger Maus-Parcours.
-- Neues Raster-Icon in PNG-Größen von 16 bis 1024 Pixeln und mehrstufigem ICO; transparente Außenkante und Darstellung bei kleiner Auflösung visuell geprüft.
-- Konversationsketten mit gesendeten Antworten, fehlenden Eltern, Zyklen, gleichen Betreffzeilen und getrennten Arbeitsbereichen. Einmalige Bestandsindexierung erhält die originalen verschlüsselten MIME-Dateien.
-- Tatsächliche WPF-Verlaufsauswahl, Abschalten in den Einstellungen, sofortige Zähleränderung je geöffneter Nachricht und fette Pill-Badges.
-- Arbeitsbereichswechsel über das tatsächliche Dropdown mit Erstellen-Eintrag, schmale ausgeblendete Scrollbars und Scrolloffset-Synchronisierung des Overlay-Templates.
-- Neue Oberfläche als WPF-Renderings in Dark/Light Mode, verschachtelte Einstellungen und Composer kontrolliert. Reale Konten bleiben unberührt.
-- Autostart-Registrierung in isoliertem HKCU-Testschlüssel, unabhängige Minimierung und PIN-Sperre beim minimierten Start; kein echter Windows-Neustart oder Ab-/Anmeldevorgang automatisiert.
-- Konten-/Ordnersortierung mit Persistenz und Bereichsschutz; Sammelauswahl liest nicht automatisch, Sammelaktionen bewahren konversationsbezogene Mails anderer Ordner und verhindern kontenfremdes Verschieben.
-- Tatsächliche Konto-/Profilwahl beim Verfassen und Antworten, inklusive erzeugtem MIME-Absender und erhaltenen Antwortverweisen.
-- Sofortige Gelesen-Markierung, PropertyChanged-Bindung, verschlüsselte Speicherung, ausstehende Änderungen bei Netzwerkfehlern und vorübergehend deaktivierten Konten; tatsächliches Seen-Flag am IMAP-Testserver.
-- Sammelordner über mehrere Konten, Arbeitsbereichstrennung, gleichnamige Ordner, gespeicherte Aufklappzustände und tatsächliche WPF-Nachrichtenliste.
-- Markierbarer Klartext mit nativem Kopierbefehl, eigenes Mailfenster und Rechtsklickmenü.
-- Tatsächlich mitgeliefertes Chromium: HTML-Inhalt, deaktivierte Seitenskripte und blockierte externe Requests, Dokumente über 2 MiB, gerenderte PDF-Seite anhand eines Bildnachweises. Kein Windows WebView2 erforderlich.
-- Externe Bilder nur nach Freigabe, Rasterbilder eingebettet, CSS-Bilder berücksichtigt, keine Browsercookies. Private Netzadressen, lokale Dateien, gefährliche Umleitungen und SVG-Antworten abgewiesen. Absendervertrauen gilt für die tatsächliche Adresse, nicht den Anzeigenamen.
-- Anhangvorschau und Speichern erhalten die dekodierten Originalbytes; Office-Inhaltsvorschau ohne Office-Prozess, externe XML-Entitäten abgewiesen, ausführbare Dateien nicht gestartet.
-- Benachrichtigungston und Versand-Swoosh als eigene PCM-Dateien; separate, gespeicherte Schalter. Audio wurde in der automatischen Prüfung nicht über Lautsprecher abgespielt.
-- Bestehende Prüfungen für MIME/SMTP/Bcc, Serverordner, Regeln, IMAP IDLE, WYSIWYG, Kontakte, DPAPI/AES-GCM und Sicherungen weiterhin erfolgreich.
-- Installer installiert und deinstalliert; vollständige Chromium-Ressourcen mit dem Build verglichen und Prüfprogramm gegen das installierte Paket ausgeführt. Fremde Testdateien und Profile erhalten. Keine Beispieldaten oder OAuth-Registrierung mitgeliefert.
-- Signierter Microsoft-Runtime-Download geprüft. Auf dem Prüfgerät war die passende Visual-C++-Komponente bereits vorhanden; eine Neuinstallation auf einer Referenz-VM wurde nicht durchgeführt.
+268 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
 
-Die Rendererprüfung erzeugt ausschließlich eigene, unsichtbare Testfenster. Es wurden keine Konten, Mails oder Dokumente des Benutzers in die Tests aufgenommen. macOS/iOS, mobiler Push und OpenPGP/S/MIME bleiben außerhalb dieses Builds. Maschinenlesbare Ergebnisse liegen als verification.json und installer-verification.json im Release.
+## Neu geprüft
+
+- Kontakte: Suche über mehrere Felder, Arbeitsbereichs- und Adressbuchgrenzen, leere Ergebnisse, strukturierte Bearbeitung, ungültige Mailadressen und Speicherung im verschlüsselten Profil.
+- Datenbestand: Bearbeiten und Abbrechen verändern die Originalkontakte nicht vor dem Speichern. Zusätzliche vCard-Felder, Anbieterzuordnung und ETags bleiben erhalten. Abbrechen der Adressbuchbearbeitung erhält bestehende Zugangsdaten.
+- Farbauswahl: HSV-Farbberechnung, Vorschau und Übernehmen im tatsächlichen WPF-Fenster. Gemeinsamer Picker für Akzent- und Textfarbe.
+- Update-Download: gestreamte HTTP-Antworten, bekannte und unbekannte Dateigröße, Zwischenfortschritte, Abbruch, unvollständige und beschädigte Dateien. Ein vorhandener gültiger Download bleibt bei Fehlern erhalten; unvollständige Dateien werden entfernt.
+- Updatefenster: tatsächliche Anzeige von Prozent, Datenmenge und Geschwindigkeit, unbestimmter Fortschritt sowie Abbruch über den Button. Download und Dateiprüfung sind getrennte Phasen.
+- Installer: Installation und erneute Update-Installation im getrennten Prüfverzeichnis. Warten auf den bisherigen Prozess und anschließender Start mit demselben PIN-geschützten Testprofil; Profilpfad enthält Leerzeichen und Umlaute. Der verschlüsselte Profilschlüssel bleibt unverändert.
+- Hauptfenster: Schließen nach unmittelbar abgeschlossenem Speichern ohne erneuten Aufruf innerhalb des laufenden Schließereignisses.
+
+## Bestehende Funktionen
+
+- Native WPF-Bedienung von Konten, Konversationen, Zählern, Mehrfachauswahl, Regeln, Verfassen, Entwürfen und Absenderprofilen.
+- IMAP MOVE mit mehreren Nachrichten, Ziel-UIDs, erneute Synchronisierung, lokale Zuordnung und Upload. Serverfehler lassen betroffene Originale erhalten.
+- SMTP-Versand aus dem Verfassen-Fenster, Bcc-Schutz und Abbruch des verzögerten Versands.
+- Mitgeliefertes Chromium: HTML-Inhalt, auswählbarer Text, blockierte Seitenskripte und externe Requests, PDF-Seite anhand einer Bildprüfung. Anhangspeicherung erhält die Originalbytes.
+- Einheitliche Dialoge und Kontextmenüs, Dark/Light Mode, Einstellungsnavigation, tatsächlich 2 Pixel breite Scrollleisten und gespeicherte Sidebar-Reihenfolge.
+- Tondateien mit abgesenktem Pegel, gemeinsame Lautstärke und separate Schalter. Kein automatisierter Hörtest über Lautsprecher.
+- Verschlüsselter Speicher, PIN, Sicherungen und Windows-Autostart in einem getrennten Registrierungsschlüssel. Kein automatisierter Windows-Ab-/Anmeldevorgang.
+
+## Pakete
+
+- Dieselben 268 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
+- Installierte Programmdatei und Chromium-Ressourcen mit dem Build verglichen. Portable ZIP Datei für Datei gegen den Build geprüft.
+- Deinstallation entfernt die Programmdateien und erhält fremde Testdateien und Profile. Bestehende Startmenüverknüpfungen und Registrierungseinträge des Prüfgeräts werden nach dem Test wiederhergestellt.
+- Keine Beispieldaten, vorbereiteten Profile oder OAuth-Registrierungen enthalten. Inhalte der Screenshots stammen ausschließlich aus den getrennten Testläufen.
+- Prüfsummen der öffentlichen Downloads mit den lokalen Paketen verglichen. Berichte: `verification.json` und `installer-verification.json` in den Release-Dateien.
+
+Die Fensterprüfungen nutzen eigene unsichtbare WPF-Fenster. Eine Neuinstallation der Visual-C++-Komponente auf einer Referenz-VM wurde nicht geprüft; auf dem Prüfgerät ist sie vorhanden. Windows-Pakete sind derzeit unsigniert. macOS/iOS, mobiler Push und OpenPGP/S/MIME sind nicht Bestandteil dieses Builds.

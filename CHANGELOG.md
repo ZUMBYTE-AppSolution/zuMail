@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.10
+
+- **Kontakte neu gestaltet:** Adressbücher, Kontaktliste und alle Details nebeneinander. Die Suche findet auch Firmen, Telefonnummern, Anschriften und Notizen.
+- **Kontakte übersichtlicher bearbeiten:** Eigene Bereiche für Person, Kontaktdaten, Adressen und weitere Angaben. Mehrere Mailadressen, Telefonnummern und Anschriften lassen sich einzeln ergänzen oder entfernen.
+- **Farben direkt auswählen:** Farbfläche, Farbtonregler, Vorschau und Hex-Eingabe für die Akzentfarbe und Textfarben beim Verfassen.
+- **Updates mit Fortschritt:** Anzeige von Prozent, geladener Datenmenge, Geschwindigkeit und geschätzter Restzeit. Downloads lassen sich abbrechen und erneut starten.
+- **Nach dem Update weiterarbeiten:** Nach erfolgreicher Installation öffnet sich zuMail wieder mit dem bisherigen Profil. Konten, Einstellungen und eine eingerichtete PIN-Sperre bleiben erhalten.
+- **Fehler beim Beenden behoben:** Das Hauptfenster schließt auch dann zuverlässig, wenn das Speichern sofort abgeschlossen ist.
+
+268 automatische Prüfungen. Installer und portable Ausgabe geprüft; Installation, Update-Neustart mit bisherigem Testprofil und Deinstallation geprüft. Neue Profile starten leer.
+
 ## 0.1.0-alpha.9
 
 - Neues Verfassen-Fenster mit klar getrennten Bereichen für Versandkonto und Profil, Empfänger, Betreff, Nachricht und Anhänge. Mehr Platz für den Nachrichtentext, kompakte Formatierungsleiste und direkt erreichbare Versandaktionen.
