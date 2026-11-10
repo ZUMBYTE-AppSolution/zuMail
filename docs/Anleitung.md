@@ -132,3 +132,9 @@ Beim Schließen einer geänderten Nachricht ausdrücklich Entwurf speichern, Ver
 **Importieren** liest vCard-Dateien; **Exportieren** exportiert die aktuell gefilterte Ansicht. Im Rechtsklickmenü lässt sich auch nur der ausgewählte Kontakt exportieren. Unter **Adressbücher** lokale Namen und bestehende Verbindungen bearbeiten oder CardDAV hinzufügen. **Synchronisieren** gleicht aktivierte Adressbücher der aktuellen Ansicht ab.
 
 Unter **Einstellungen → Darstellung → Erscheinungsbild** öffnet **Farbe auswählen** den Colorpicker. In der Farbfläche Sättigung und Helligkeit wählen, am Regler den Farbton einstellen oder einen Hex-Wert wie #52D8F3 eingeben. Erst **Übernehmen** bestätigt die Farbe. Der gleiche Picker steht beim Verfassen für Textfarben bereit.
+
+## Änderungen lesen und zuMail erneut öffnen
+
+Der Updater zeigt den Changelog mit formatierten Überschriften, Listen, Tabellen und Links. Text lässt sich markieren und kopieren. Screenshots aus der offiziellen Releasequelle erscheinen direkt; andere Bildadressen lassen sich über ihren Link im Browser öffnen.
+
+Ist zuMail schon geöffnet, holt ein weiterer Start das vorhandene Fenster nach vorn. Das gilt auch für minimierte oder im Infobereich versteckte Fenster. Eine aktive PIN-Sperre bleibt erhalten. Ein zusätzlicher automatischer Start bei der Windows-Anmeldung öffnet das Fenster nicht ungefragt.

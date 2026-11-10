@@ -1,8 +1,16 @@
-# Prüfung · 0.1.0-alpha.10
+# Prüfung · 0.1.0-alpha.11
 
-268 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
+285 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
 
-## Neu geprüft
+## Neu in Alpha 11 geprüft
+
+- Echte lokale Aktivierungsanfragen zwischen getrennten Prozessen, mehrere gleichzeitige Starts, ungültige Anfragen, Abbruch und Trennung verschiedener Profile.
+- Wiederherstellung des tatsächlichen minimierten und versteckten WPF-Hauptfensters. Maximierte Ansichten bleiben maximiert; PIN-Sperre und verborgener Mailinhalt bleiben erhalten.
+- Die Windows-Freigabe für den Vordergrundwechsel wird beim ausdrücklichen Zweitstart an die bestehende Instanz übergeben. Die automatisierten Fensterprüfungen verwenden unsichtbare Testfenster ohne Eingriff in den Desktop des Benutzers; ein manueller Start aus Explorer wurde nicht automatisiert.
+- Native Markdown-Darstellung mit tatsächlichen Überschriften, Listen, fettem Text, Tabellen, Code und funktionierenden Links. Kopierbarer Text und Dark/Light Mode geprüft.
+- Screenshots aus begrenzten Rasterdaten angezeigt. Nur Bilder aus der offiziellen Releasequelle werden automatisch geladen; fremde Bilder bleiben verlinkt. Skript- und lokale Dateilinks sind nicht ausführbar; HTML bleibt Text.
+
+## Weiterhin geprüft
 
 - Kontakte: Suche über mehrere Felder, Arbeitsbereichs- und Adressbuchgrenzen, leere Ergebnisse, strukturierte Bearbeitung, ungültige Mailadressen und Speicherung im verschlüsselten Profil.
 - Datenbestand: Bearbeiten und Abbrechen verändern die Originalkontakte nicht vor dem Speichern. Zusätzliche vCard-Felder, Anbieterzuordnung und ETags bleiben erhalten. Abbrechen der Adressbuchbearbeitung erhält bestehende Zugangsdaten.
@@ -24,7 +32,7 @@
 
 ## Pakete
 
-- Dieselben 268 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
+- Dieselben 285 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
 - Installierte Programmdatei und Chromium-Ressourcen mit dem Build verglichen. Portable ZIP Datei für Datei gegen den Build geprüft.
 - Deinstallation entfernt die Programmdateien und erhält fremde Testdateien und Profile. Bestehende Startmenüverknüpfungen und Registrierungseinträge des Prüfgeräts werden nach dem Test wiederhergestellt.
 - Keine Beispieldaten, vorbereiteten Profile oder OAuth-Registrierungen enthalten. Inhalte der Screenshots stammen ausschließlich aus den getrennten Testläufen.

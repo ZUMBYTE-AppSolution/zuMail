@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.11
+
+- **Änderungen im Updater formatiert lesen:** Überschriften, Listen, Hervorhebungen, Tabellen, Links und Screenshots werden direkt angezeigt. Text lässt sich markieren und kopieren. Die Ansicht passt sich dem hellen oder dunklen Design an.
+- **zuMail erneut öffnen:** Ein weiterer Start holt das bereits geöffnete Fenster nach vorn. Minimierte oder im Infobereich versteckte Fenster werden wiederhergestellt; eine vorher maximierte Ansicht bleibt maximiert. Es erscheint keine Meldung „ist bereits geöffnet“ mehr.
+- **Sperre und Arbeitsstand bleiben erhalten:** Die vorhandene Sitzung wird weiterverwendet. Eine aktive PIN-Sperre bleibt bestehen; ein zusätzlicher Windows-Autostart bleibt im Hintergrund.
+
+285 automatische Prüfungen. Markdown in Dark/Light Mode, Fensterwiederherstellung und Anfragen zwischen getrennten Prozessen geprüft. Installer, Update-Neustart, Deinstallation und öffentliche Downloads geprüft. Neue Profile starten leer.
+
 ## 0.1.0-alpha.10
 
 - **Kontakte neu gestaltet:** Adressbücher, Kontaktliste und alle Details nebeneinander. Die Suche findet auch Firmen, Telefonnummern, Anschriften und Notizen.

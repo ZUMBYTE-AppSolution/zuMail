@@ -1,17 +1,17 @@
 <p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zuMail"></p>
 <h1 align="center">zuMail</h1>
 <p align="center">Korrespondenz mit Charakter.</p>
-<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.10">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
+<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.11">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 
 zuMail ist ein Mailprogramm für Windows von **Zumbyte - AppSolution**. Trenne private und geschäftliche Post in Arbeitsbereiche, verwalte mehrere Konten und behalte Nachrichten und Kontakte im Blick. Mit hellem oder dunklem Design, eigener Akzentfarbe und verstellbarer Aufteilung.
 
-## Download · Alpha 10
+## Download · Alpha 11
 
 | Für Windows 10 / 11 x64 | Download |
 | --- | --- |
-| Mit Installation | [zuMail installieren](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.10/zuMail-0.1.0-alpha.10-win-x64-Setup.exe) |
-| Ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.10/zuMail-0.1.0-alpha.10-win-x64-Portable.zip) |
-| Dateien überprüfen | [SHA-256-Prüfsummen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.10/SHA256SUMS.txt) |
+| Mit Installation | [zuMail installieren](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.11/zuMail-0.1.0-alpha.11-win-x64-Setup.exe) |
+| Ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.11/zuMail-0.1.0-alpha.11-win-x64-Portable.zip) |
+| Dateien überprüfen | [SHA-256-Prüfsummen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.11/SHA256SUMS.txt) |
 
 Die App befindet sich in der Alpha-Phase. Neue Profile starten leer; es werden keine Beispielmails oder Kontakte angelegt. Die Pakete sind derzeit unsigniert. Verfügbar für Windows x64; macOS und iOS sind geplant.
 
@@ -42,7 +42,7 @@ Adressbuch auswählen, Kontakt suchen und Details ansehen. Eine neue Mail lässt
 
 **Update herunterladen**
 
-![Update mit Downloadfortschritt](assets/screenshots/zuMail-update.png)
+![Markdown-Änderungshinweise und Downloadfortschritt](assets/screenshots/zuMail-update.png)
 
 **Nachricht verfassen**
 
@@ -52,14 +52,11 @@ Adressbuch auswählen, Kontakt suchen und Details ansehen. Eine neue Mail lässt
 
 Die Screenshots zeigen eigens angelegte Testinhalte. Diese werden nicht mit der App ausgeliefert.
 
-## Neu in Alpha 10
+## Neu in Alpha 11
 
-- **Kontakte neu gestaltet:** Adressbücher, Kontaktliste und alle Details nebeneinander. Die Suche findet auch Firmen, Telefonnummern, Anschriften und Notizen.
-- **Kontakte übersichtlicher bearbeiten:** Eigene Bereiche für Person, Kontaktdaten, Adressen und weitere Angaben. Mehrere Mailadressen, Telefonnummern und Anschriften lassen sich einzeln ergänzen oder entfernen.
-- **Farben direkt auswählen:** Farbfläche, Farbtonregler, Vorschau und Hex-Eingabe für die Akzentfarbe und Textfarben beim Verfassen.
-- **Updates mit Fortschritt:** Anzeige von Prozent, geladener Datenmenge, Geschwindigkeit und geschätzter Restzeit. Downloads lassen sich abbrechen und erneut starten.
-- **Nach dem Update weiterarbeiten:** Nach erfolgreicher Installation öffnet sich zuMail wieder mit dem bisherigen Profil. Konten, Einstellungen und eine eingerichtete PIN-Sperre bleiben erhalten.
-- **Fehler beim Beenden behoben:** Das Hauptfenster schließt auch dann zuverlässig, wenn das Speichern sofort abgeschlossen ist.
+- **Änderungen im Updater formatiert lesen:** Überschriften, Listen, Hervorhebungen, Tabellen, Links und Screenshots werden direkt angezeigt. Text lässt sich markieren und kopieren. Die Ansicht passt sich dem hellen oder dunklen Design an.
+- **zuMail erneut öffnen:** Ein weiterer Start holt das bereits geöffnete Fenster nach vorn. Minimierte oder im Infobereich versteckte Fenster werden wiederhergestellt; eine vorher maximierte Ansicht bleibt maximiert. Es erscheint keine Meldung „ist bereits geöffnet“ mehr.
+- **Sperre und Arbeitsstand bleiben erhalten:** Die vorhandene Sitzung wird weiterverwendet. Eine aktive PIN-Sperre bleibt bestehen; ein zusätzlicher Windows-Autostart bleibt im Hintergrund.
 
 [Alle Änderungen ansehen](CHANGELOG.md)
 
@@ -76,7 +73,7 @@ Die Screenshots zeigen eigens angelegte Testinhalte. Diese werden nicht mit der 
 | Anpassen | Dark/Light Mode, Farbauswahl, verstellbare Bereiche, schmale Scrollleisten und sortierbare Sidebar |
 | Sicherheit | Verschlüsselter lokaler Speicher, optionale 4-/6-stellige PIN, Autolock und passwortgeschützte Sicherungen |
 | Windows | Benachrichtigungen, einstellbare Töne, Hintergrundbetrieb und Autostart auf Wunsch minimiert |
-| Updates | Updateprüfung, Downloadfortschritt und Neustart nach der Installation |
+| Updates | Formatierte Änderungshinweise, Downloadfortschritt und Neustart nach der Installation |
 
 Externe Bilder in HTML-Mails werden erst nach Freigabe geladen. Auf Wunsch kannst du einer Absenderadresse dauerhaft vertrauen. Seitenskripte bleiben gesperrt.
 
