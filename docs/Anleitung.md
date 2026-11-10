@@ -97,3 +97,10 @@ Konversationen verwenden lokal geladene Nachrichten des aktiven Arbeitsbereichs.
 **Windows-Start:** Einstellungen → App → Start & Hintergrund. Autostart bei Windows-Anmeldung registriert die aktuelle Programmdatei für dieses Benutzerkonto. Autostart minimiert ist eine unabhängige Vorgabe für den automatischen Start. Ein normales Öffnen der App bleibt sichtbar. Für die portable Ausgabe muss der Ordner dauerhaft an seinem Platz bleiben. Die Deinstallation entfernt nur einen Autostart-Eintrag, der auf genau diese Installation zeigt. Windows kann den Start verzögern oder einen Eintrag in seinen eigenen Starteinstellungen deaktivieren.
 
 **Reihenfolge:** Konten am Griff der Kopfzeile ziehen; Ordner am Griff links vom Namen. Die Markierung zeigt, ob vor oder nach dem Ziel eingefügt wird. Ordner lassen sich innerhalb ihres Kontos anordnen. Den ursprünglichen Ordneraufbau unter Einstellungen → Darstellung → Layout & Sidebar wiederherstellen.
+
+
+## Mails mit der Maus verschieben
+
+Eine Mail aus der Liste auf einen Ordnernamen in der Sidebar ziehen. Für mehrere Mails vorher Strg/Umschalt oder den Auswahlmodus verwenden und die Auswahl auf den Zielordner ziehen. Beim Ansetzen des Ziehens bleibt die Gruppe ausgewählt. Das Ziel erhält einen Akzentrahmen; am Rand scrollt die Sidebar automatisch. Esc bricht das Ziehen ab.
+
+Serverordner werden mit dem Mailserver abgeglichen; lokale Ordner erhalten das Serveroriginal und ordnen die Mail nur in zuMail lokal zu. Ein gemeinsames Ziel unter Alle Mailkonten verschiebt jede Mail in den entsprechenden Ordner ihres eigenen Kontos. Für einen konkreten Kontoordner ausschließlich Mails dieses Kontos auswählen. Markiert und Entwürfe sind keine Verschiebeziele. Eine aktive Serververbindung ist erforderlich; fehlgeschlagene Einzelaktionen werden unten angezeigt und verändern die betroffenen Originale nicht.

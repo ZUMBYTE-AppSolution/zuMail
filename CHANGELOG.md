@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.7
+
+- Nachrichten direkt aus der Liste auf Ordner in der Sidebar ziehen, auch mehrere ausgewählte Mails und Konversationen auf einmal. Eine bestehende Mehrfachauswahl bleibt beim Ansetzen des Ziehens erhalten; Ziehen markiert keine Mail als gelesen.
+- Serverordner führen echte IMAP-Verschiebeaktionen aus. Ziel-UIDs, verschlüsselte Speicherung, Nachrichtenliste und Ungelesen-Badges werden aktualisiert. Lokale Mails lassen sich in Serverordner hochladen.
+- Gemeinsame Standardordner unter „Alle Mailkonten“ lösen das Ziel pro Konto auf. Kontoordner nehmen ausschließlich Nachrichten desselben Kontos an. „Markiert“ und „Entwürfe“ sind keine Verschiebeziele.
+- Lokale Ordner ordnen Nachrichten lokal zu und erhalten das Original auf dem Mailserver. Bereits passende Ziele bleiben unverändert. Abgelehnte oder fehlgeschlagene Serveraktionen bleiben sichtbar; betroffene Originalmails behalten ihre bisherige Serverzuordnung.
+- Zielmarkierung und automatisches Scrollen unterstützen das Ziehen in der Sidebar. Die bestehende Sortierung über Ziehgriffe bleibt verfügbar.
+- Neues rasterbasiertes App-Icon: reduzierter Cyan-Brief mit integriertem Z auf Anthrazit, dezenter Glow, transparente Außenkante und geglättete PNG-/ICO-Größen für App und Installer.
+
+201 automatische Prüfungen, einschließlich nativer WPF-Drop-Ereignisse, IMAP-MOVE, Mehrfachauswahl, erneuter Synchronisierung, lokalen Zielen, Upload und Verbindungsfehlern. Installer und portable Ausgabe geprüft. Neue Profile starten leer.
+
 ## 0.1.0-alpha.6
 
 - Überarbeitete Mailansicht mit abgestimmten Innenabständen, ruhigen Kartenflächen und kompakter Sidebar. Dark/Light Mode und die frei wählbare Akzentfarbe bleiben verfügbar.
