@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.8
+
+- Einheitliche Oberflächen, Abstände, Rundungen und Fokuszustände in Mailansicht, Einstellungen und Dialogen. Anthrazit und Light Mode bleiben neutral; Akzentfarben markieren Auswahl und Aktionen.
+- Einstellungen mit aufklappbaren Kategorien, nachvollziehbarer Seitennavigation, Suche mit Trefferanzeige, ausgerichteten Feldern und erklärten Schaltern. Akzentfarben werden als echte Farbfelder dargestellt; Import und Sicherungen sind in eigene Bereiche gegliedert.
+- Kontextmenüs mit einheitlichen Abständen, dezentem Schatten außerhalb der Texte, schmalem Rahmen und getrennten Aktionsgruppen. Papierkorb und Ordnerentfernung sind farblich erkennbar. Die Menüs im HTML-Lesebereich und Infobereich verwenden dieselbe Gestaltung.
+- Nachrichtenfilter als zusammengehörige Auswahl; Sidebar-Ziele zeigen beim Ziehen nun den tatsächlichen Akzentrahmen. Auswahl, Serverabgleich und bestehende Sicherheitsabfragen bleiben erhalten.
+- Business Chime und Versand-Swoosh deutlich abgesenkt und nach spektral gewichteter Signalenergie aneinander angeglichen. Beide verwenden dieselbe Lautstärkeeinstellung unter App → Benachrichtigungen, mit separaten Ein/Aus-Schaltern. 0 % ist stumm; ältere Profile erhalten die leisere Vorgabe von 60 %. Die Windows-Systemlautstärke wird nicht verändert.
+- Tonvorschau funktioniert auch bei abgeschalteten Windows-Benachrichtigungen. Kompakte Eingabefelder, einheitliche Auswahllisten und klare Formatierungsfelder im Nachrichteneditor.
+
+220 automatische Prüfungen. Einstellungen und Menüs als native WPF-Oberfläche kontrolliert, Audiopegel und Lautstärkeregler geprüft. Installer installiert/deinstalliert und Prüfungen gegen das installierte Paket ausgeführt. Neue Profile starten leer.
+
 ## 0.1.0-alpha.7
 
 - Nachrichten direkt aus der Liste auf Ordner in der Sidebar ziehen, auch mehrere ausgewählte Mails und Konversationen auf einmal. Eine bestehende Mehrfachauswahl bleibt beim Ansetzen des Ziehens erhalten; Ziehen markiert keine Mail als gelesen.

@@ -1,20 +1,29 @@
 <p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zuMail"></p>
 <h1 align="center">zuMail</h1>
 <p align="center">Korrespondenz mit Charakter.</p>
-<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.7">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
+<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.8">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 <p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2021%20x64-52d8f3?style=flat-square" alt="Windows x64"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/zuMail?include_prereleases&amp;style=flat-square&amp;label=Alpha" alt="Aktuelle Alpha"></p>
 
 **zuMail** ist ein nativer Windows-Mailclient von **Zumbyte - AppSolution**. Mehrere Arbeitsbereiche, Mailkonten, Profile und Kontakte bleiben übersichtlich erreichbar. Anthrazit oder Light Mode, eigene Akzentfarbe und verschiebbare Bereiche passen die Ansicht an deinen Alltag an.
 
 | Ausgabe | Download |
 | --- | --- |
-| Windows 10 / 11 x64 · Installer | [Setup herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.7/zuMail-0.1.0-alpha.7-win-x64-Setup.exe) |
-| Windows x64 · ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.7/zuMail-0.1.0-alpha.7-win-x64-Portable.zip) |
-| Prüfsummen | [SHA256SUMS.txt](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.7/SHA256SUMS.txt) |
+| Windows 10 / 11 x64 · Installer | [Setup herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.8/zuMail-0.1.0-alpha.8-win-x64-Setup.exe) |
+| Windows x64 · ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.8/zuMail-0.1.0-alpha.8-win-x64-Portable.zip) |
+| Prüfsummen | [SHA256SUMS.txt](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.8/SHA256SUMS.txt) |
 
 Die benötigte .NET-Laufzeit und Chromium sind enthalten; Windows WebView2 ist nicht erforderlich. Der Installer richtet die Microsoft Visual-C++-Komponente bei Bedarf direkt über Microsoft ein; dafür sind Internet und gegebenenfalls eine Windows-Freigabe erforderlich. Im portablen Paket liegt dafür Runtime-Setup.cmd. Windows-Pakete sind derzeit unsigniert.
 
-## Aktuelles Changelog · Alpha 7
+## Aktuelles Changelog · Alpha 8
+
+- Einheitliche Oberflächen, Abstände, Rundungen und Fokuszustände in Mailansicht, Einstellungen und Dialogen. Anthrazit und Light Mode bleiben neutral; Akzentfarben markieren Auswahl und Aktionen.
+- Einstellungen mit aufklappbaren Kategorien, nachvollziehbarer Seitennavigation, Suche mit Trefferanzeige, ausgerichteten Feldern und erklärten Schaltern. Akzentfarben werden als echte Farbfelder dargestellt; Import und Sicherungen sind in eigene Bereiche gegliedert.
+- Kontextmenüs mit einheitlichen Abständen, dezentem Schatten außerhalb der Texte, schmalem Rahmen und getrennten Aktionsgruppen. Papierkorb und Ordnerentfernung sind farblich erkennbar. Die Menüs im HTML-Lesebereich und Infobereich verwenden dieselbe Gestaltung.
+- Nachrichtenfilter als zusammengehörige Auswahl; Sidebar-Ziele zeigen beim Ziehen nun den tatsächlichen Akzentrahmen. Auswahl, Serverabgleich und bestehende Sicherheitsabfragen bleiben erhalten.
+- Business Chime und Versand-Swoosh deutlich abgesenkt und nach spektral gewichteter Signalenergie aneinander angeglichen. Beide verwenden dieselbe Lautstärkeeinstellung unter App → Benachrichtigungen, mit separaten Ein/Aus-Schaltern. 0 % ist stumm; ältere Profile erhalten die leisere Vorgabe von 60 %. Die Windows-Systemlautstärke wird nicht verändert.
+- Tonvorschau funktioniert auch bei abgeschalteten Windows-Benachrichtigungen. Kompakte Eingabefelder, einheitliche Auswahllisten und klare Formatierungsfelder im Nachrichteneditor.
+
+Seit Alpha 7:
 
 - Nachrichten direkt aus der Liste auf Ordner in der Sidebar ziehen, auch mehrere ausgewählte Mails und Konversationen auf einmal. Eine bestehende Mehrfachauswahl bleibt beim Ansetzen des Ziehens erhalten; Ziehen markiert keine Mail als gelesen.
 - Serverordner führen echte IMAP-Verschiebeaktionen aus. Ziel-UIDs, verschlüsselte Speicherung, Nachrichtenliste und Ungelesen-Badges werden aktualisiert. Lokale Mails lassen sich in Serverordner hochladen.
@@ -90,7 +99,7 @@ Die App startet ohne vorgefertigte Konten, Mails oder Kontakte. Es gibt keinen D
 
 ## Alpha-Stand und Daten
 
-**202 automatische Prüfungen** einschließlich echter Chromium-Darstellung, Skript-/Netzwerksperre, großer HTML-Nachrichten, PDF-Ausgabe, Gelesen-Zählern und gespeicherten Sidebar-Zuständen. Installer und portable Ausgabe lokal erstellt; das installierte Paket wird nochmals mit dem Prüfprogramm getestet. Prüfdaten werden nicht mit der App ausgeliefert.
+**220 automatische Prüfungen** einschließlich echter Chromium-Darstellung, Skript-/Netzwerksperre, großer HTML-Nachrichten, PDF-Ausgabe, Gelesen-Zählern und gespeicherten Sidebar-Zuständen. Installer und portable Ausgabe lokal erstellt; das installierte Paket wird nochmals mit dem Prüfprogramm getestet. Prüfdaten werden nicht mit der App ausgeliefert.
 
 Pro geöffnetem IMAP-Ordner lädt dieser Build die letzten 100 Nachrichten; die Suche verwendet geladene Nachrichten. Serverlöschungen entfernen noch keine Cachekopien. Lokale Ordner lassen die Servernachricht bestehen. Neue Kontaktverbindungen verwenden CardDAV mit optionalem Zurückschreiben und Konfliktschutz. Bereits bestehende Anbieteranmeldungen bleiben gespeichert; neue Browser-Kontaktanmeldungen werden nicht angeboten. CardDAV benötigt die direkte Adressbuch-URL.
 

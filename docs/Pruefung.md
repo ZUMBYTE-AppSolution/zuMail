@@ -1,6 +1,9 @@
-# Prüfung · 0.1.0-alpha.7
+# Prüfung · 0.1.0-alpha.8
 
-- 202 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- 220 automatische Prüfungen erfolgreich; isolierte Protokollserver und synthetische Postfächer, keine echten Konten verändert.
+- Einstellungen: reale Unterseiten, Suche mit leerem Ergebnis, Kategoriezuordnung, Wechsel zwischen neutralem Dark/Light Mode und gespeicherte gemeinsame Tonlautstärke.
+- Kontextmenüs: Aktionsgruppen, tatsächlich gerenderte Warnfarbe, schmaler Rahmen, unverwischte Inhaltsebene und funktionierende Sammelaktion für Lesen. Menü- und Einstellungsansichten als native WPF-Renderings kontrolliert.
+- Audiodateien: abgesenkte Spitzen unter -20 dBFS und geringer Unterschied der mittleren Signalpegel; digitale Lautstärkeskalierung, Stummschaltung und Schutz vor ungültigen gespeicherten Werten. Beide Synthesedateien nutzen denselben spektral gewichteten Zielpegel. Keine Lautsprecher- oder Hörprüfung automatisiert.
 - Native WPF-Drop-Ereignisse und Auswahl beim Ansetzen des Ziehens; tatsächliches IMAP MOVE für mehrere Nachrichten, korrekte Ziel-UIDs, keine Duplikate nach erneuter Synchronisierung, lokale Zuordnung und Upload importierter Mails. Abgelehnte Einzelaktionen und Verbindungsfehler erhalten betroffene Originale. Kein automatisierter freihändiger Maus-Parcours.
 - Neues Raster-Icon in PNG-Größen von 16 bis 1024 Pixeln und mehrstufigem ICO; transparente Außenkante und Darstellung bei kleiner Auflösung visuell geprüft.
 - Konversationsketten mit gesendeten Antworten, fehlenden Eltern, Zyklen, gleichen Betreffzeilen und getrennten Arbeitsbereichen. Einmalige Bestandsindexierung erhält die originalen verschlüsselten MIME-Dateien.

@@ -104,3 +104,10 @@ Konversationen verwenden lokal geladene Nachrichten des aktiven Arbeitsbereichs.
 Eine Mail aus der Liste auf einen Ordnernamen in der Sidebar ziehen. Für mehrere Mails vorher Strg/Umschalt oder den Auswahlmodus verwenden und die Auswahl auf den Zielordner ziehen. Beim Ansetzen des Ziehens bleibt die Gruppe ausgewählt. Das Ziel erhält einen Akzentrahmen; am Rand scrollt die Sidebar automatisch. Esc bricht das Ziehen ab.
 
 Serverordner werden mit dem Mailserver abgeglichen; lokale Ordner erhalten das Serveroriginal und ordnen die Mail nur in zuMail lokal zu. Ein gemeinsames Ziel unter Alle Mailkonten verschiebt jede Mail in den entsprechenden Ordner ihres eigenen Kontos. Für einen konkreten Kontoordner ausschließlich Mails dieses Kontos auswählen. Markiert und Entwürfe sind keine Verschiebeziele. Eine aktive Serververbindung ist erforderlich; fehlgeschlagene Einzelaktionen werden unten angezeigt und verändern die betroffenen Originale nicht.
+
+
+## Oberfläche und App-Töne
+
+Einstellungen sind in aufklappbaren Kategorien organisiert. Die Suche findet auch Unterseiten anhand ihrer Optionen, zum Beispiel Signatur oder Lautstärke. Mit Strg+F die Einstellungssuche fokussieren. Fertig speichert und schließt die Einstellungen. Dark/Light Mode und die Akzentfarbe unter Darstellung → Erscheinungsbild wechseln.
+
+Unter App → Benachrichtigungen steuert ein gemeinsamer Regler die Lautstärke von Business Chime und Versand-Swoosh. Beide Audiodateien sind deutlich leiser abgestimmt. Bei 0 % bleiben beide stumm; die Töne lassen sich weiterhin einzeln ausschalten. Die Vorschau verwendet denselben Pegel wie der spätere App-Ton. Die Windows-Lautstärke bleibt unverändert.
