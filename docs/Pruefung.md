@@ -1,6 +1,13 @@
-# Prüfung · 0.2.0-alpha.2
+# Prüfung · 0.2.0-alpha.3
 
-302 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
+308 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
+
+## Symbole und Logo
+
+- Alle 84 eingebetteten Iconify-Symbole als echte WPF-Geometrien geprüft. Keine PNG- oder Bildmasken in den Symbolzeichnungen.
+- Kleine Symbole bei 12, 16 und 24 DIP sowie Rasterausgaben bei 100, 125, 150 und 200 Prozent geprüft. Farbwechsel, Anbieterfarben, Verläufe und Transformationen kontrolliert.
+- Freigestelltes Rasterlogo auf transparente Außenbereiche und sichtbaren Brief geprüft. Dekodierte Bildgrößen für Kopfzeile und Dialoge passen zur tatsächlichen Pixelgröße und erhalten das Seitenverhältnis.
+- Die Skalierungsprüfungen verwenden native Rasterausgaben; sie ersetzen keinen Test auf vier physischen Monitoren.
 
 ## Schriftbild
 
@@ -46,7 +53,7 @@
 
 ## Pakete
 
-- Dieselben 302 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
+- Dieselben 308 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
 - Installierte Programmdatei und Chromium-Ressourcen mit dem Build verglichen. Portable ZIP Datei für Datei gegen den Build geprüft.
 - Deinstallation entfernt die Programmdateien und erhält fremde Testdateien und Profile. Bestehende Startmenüverknüpfungen und Registrierungseinträge des Prüfgeräts werden nach dem Test wiederhergestellt.
 - Keine Beispieldaten, vorbereiteten Profile, privaten Signierkonfigurationen oder OAuth-Registrierungen enthalten. Inhalte der Screenshots stammen ausschließlich aus den getrennten Testläufen.

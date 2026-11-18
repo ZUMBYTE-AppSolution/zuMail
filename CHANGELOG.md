@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0-alpha.3 · Symbole und Logo
+
+- **Schärfere Symbole:** Buttons, Sidebar, Menüs und Anbieterlogos werden direkt aus den Iconify-Originalen gezeichnet. Sie passen sich der Bildschirmauflösung an.
+- **Freigestelltes zMail-Logo:** Brief und Z erscheinen innerhalb der App ohne Hintergrundkachel. Kopfzeile, Einstellungen, Dialoge und PIN-Ansicht verwenden das transparente Logo in passender Auflösung.
+- **Einheitliche Darstellung:** kompakte Symbolgrößen, unverzerrte Anbieterlogos und lesbare Apple-/GitHub-Symbole im hellen und dunklen Modus. Die App-Schrift bleibt Segoe UI.
+
+308 automatische Prüfungen. Alle 84 Symbole in mehreren Größen und Rasterausgaben bei 100, 125, 150 und 200 Prozent geprüft. Windows-Pakete weiterhin mit Microsoft Artifact Signing signiert.
+
 ## 0.2.0-alpha.2 · Schriftbild
 
 - **Die vertraute App-Schrift ist zurück.** Menüs, Buttons, Sidebar, Einstellungen und Überschriften verwenden wieder Segoe UI. Die Website-Schriften werden nicht mehr in die App eingebunden.

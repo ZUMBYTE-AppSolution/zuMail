@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zMail"></p>
 <h1 align="center">zMail</h1>
 <p align="center">Korrespondenz mit Charakter.</p>
-<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.2.0-alpha.2">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
+<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.2.0-alpha.3">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 
 zMail ist das Windows-Mailprogramm von **Zumbyte AppSolution**. Mehrere Mailkonten, getrennte Arbeitsbereiche, Kontakte und eigene Filter. Gestaltet im Stil von [zumbyte.de](https://zumbyte.de), mit dunkler oder heller Oberfläche und frei wählbarer Akzentfarbe.
 
@@ -11,9 +11,9 @@ zMail ist das Windows-Mailprogramm von **Zumbyte AppSolution**. Mehrere Mailkont
 
 | Windows 10 / 11 x64 | Datei |
 | --- | --- |
-| Mit Installation | [zMail installieren](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.2/zMail-0.2.0-alpha.2-win-x64-Setup.exe) |
-| Ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.2/zMail-0.2.0-alpha.2-win-x64-Portable.zip) |
-| Dateien überprüfen | [SHA-256-Prüfsummen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.2/SHA256SUMS.txt) · [Signaturprüfung](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.2/signing-verification.json) |
+| Mit Installation | [zMail installieren](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.3/zMail-0.2.0-alpha.3-win-x64-Setup.exe) |
+| Ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.3/zMail-0.2.0-alpha.3-win-x64-Portable.zip) |
+| Dateien überprüfen | [SHA-256-Prüfsummen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.3/SHA256SUMS.txt) · [Signaturprüfung](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.3/signing-verification.json) |
 
 Programm, Installer und Deinstaller sind über **Microsoft Artifact Signing** digital signiert. Der zertifizierte Herausgeber im Windows-Sicherheitsdialog ist **Andreas Zumbansen**.
 
@@ -70,12 +70,12 @@ Farbmodus, persönliche Akzentfarbe und Layout sind getrennt erreichbar. Der Col
 
 Für die Screenshots wurden getrennte Testprofile verwendet. Deren Kontakte und Nachrichten werden nicht mit der App ausgeliefert.
 
-## Neu in 0.2.0-alpha.2
+## Neu in 0.2.0-alpha.3
 
-- Die vertraute App-Schrift Segoe UI ist zurück: in Sidebar, Menüs, Buttons, Einstellungen, Überschriften und Wortmarke.
-- Website-Schriften werden nicht mehr eingebunden. Postfachüberschriften sind wieder kompakter und kräftiger.
-- Das neue Zumbyte-Design, persönliche Akzentfarben und vorhandene Profile bleiben erhalten.
-- Windows-Programm, Installer und Deinstaller sind weiterhin mit Microsoft Artifact Signing signiert.
+- Schärfere Symbole in Sidebar, Buttons, Menüs und bei der Anbieterauswahl. Die Originalkonturen passen sich der Bildschirmauflösung an.
+- Das zMail-Logo erscheint innerhalb der App freigestellt und ohne Hintergrundkachel, in passender Auflösung für die jeweilige Anzeige.
+- Anbieterlogos behalten ihre Proportionen und Farben. Apple und GitHub sind auch im dunklen Modus gut erkennbar.
+- Segoe UI, das Zumbyte-Farbschema und vorhandene Profile bleiben erhalten. Windows-Pakete weiterhin mit Microsoft Artifact Signing signiert.
 
 ## Funktionen
 
