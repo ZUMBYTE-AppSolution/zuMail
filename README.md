@@ -1,85 +1,106 @@
-<p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zuMail"></p>
-<h1 align="center">zuMail</h1>
+<p align="center"><img src="assets/app-icon.png" width="112" height="112" alt="zMail"></p>
+<h1 align="center">zMail</h1>
 <p align="center">Korrespondenz mit Charakter.</p>
-<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.1.0-alpha.11">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
+<p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/zuMail/releases/tag/v0.2.0-alpha.1">Herunterladen</a> · <a href="docs/Anleitung.md">Anleitung</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 
-zuMail ist ein Mailprogramm für Windows von **Zumbyte - AppSolution**. Trenne private und geschäftliche Post in Arbeitsbereiche, verwalte mehrere Konten und behalte Nachrichten und Kontakte im Blick. Mit hellem oder dunklem Design, eigener Akzentfarbe und verstellbarer Aufteilung.
+zMail ist das Windows-Mailprogramm von **Zumbyte AppSolution**. Mehrere Mailkonten, getrennte Arbeitsbereiche, Kontakte und eigene Filter. Gestaltet im Stil von [zumbyte.de](https://zumbyte.de), mit dunkler oder heller Oberfläche und frei wählbarer Akzentfarbe.
 
-## Download · Alpha 11
+**Bisher zuMail, jetzt zMail:** Deine bisherigen Konten und Nachrichten bleiben erhalten. Das Release-Repository bleibt unter seiner bisherigen Adresse erreichbar, damit der eingebaute Updater weiter funktioniert.
 
-| Für Windows 10 / 11 x64 | Download |
+## Download
+
+| Windows 10 / 11 x64 | Datei |
 | --- | --- |
-| Mit Installation | [zuMail installieren](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.11/zuMail-0.1.0-alpha.11-win-x64-Setup.exe) |
-| Ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.11/zuMail-0.1.0-alpha.11-win-x64-Portable.zip) |
-| Dateien überprüfen | [SHA-256-Prüfsummen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.1.0-alpha.11/SHA256SUMS.txt) |
+| Mit Installation | [zMail installieren](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.1/zMail-0.2.0-alpha.1-win-x64-Setup.exe) |
+| Ohne Installation | [Portable ZIP herunterladen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.1/zMail-0.2.0-alpha.1-win-x64-Portable.zip) |
+| Dateien überprüfen | [SHA-256-Prüfsummen](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.1/SHA256SUMS.txt) · [Signaturprüfung](https://github.com/ZUMBYTE-AppSolution/zuMail/releases/download/v0.2.0-alpha.1/signing-verification.json) |
 
-Die App befindet sich in der Alpha-Phase. Neue Profile starten leer; es werden keine Beispielmails oder Kontakte angelegt. Die Pakete sind derzeit unsigniert. Verfügbar für Windows x64; macOS und iOS sind geplant.
+Programm, Installer und Deinstaller sind über **Microsoft Artifact Signing** digital signiert. Der zertifizierte Herausgeber im Windows-Sicherheitsdialog ist **Andreas Zumbansen**.
+
+zMail befindet sich in der Alpha-Phase. Verfügbar für Windows x64; macOS und iOS sind geplant. Neue Profile starten ohne Beispielmails und Beispielkontakte.
 
 ## Einblicke
 
-### Posteingang
+### Mailansicht · Dunkel
 
-Arbeitsbereich und Konten links, Nachrichten in der Mitte, geöffnete Mail rechts. Ungelesene Nachrichten sind an den Zählern erkennbar.
+Arbeitsbereich und Konten links, Nachrichtenliste in der Mitte, geöffnete Mail rechts. Ungelesene Nachrichten stehen als Zähler direkt am Ordner.
 
-![Mailansicht von zuMail](assets/screenshots/zuMail-mail.png)
+![zMail im dunklen Zumbyte-Design](assets/screenshots/zMail-mail.png)
 
-### Kontakte
+### Mailansicht · Hell
 
-Adressbuch auswählen, Kontakt suchen und Details ansehen. Eine neue Mail lässt sich direkt aus dem Kontakt heraus beginnen.
+Warme Papierfarben und derselbe Aufbau. Der Zumbyte-Akzent passt sich dem hellen Modus an.
 
-![Kontaktverwaltung](assets/screenshots/zuMail-contacts.png)
+![zMail im hellen Zumbyte-Design](assets/screenshots/zMail-mail-light.png)
+
+### Einstellungen
+
+Farbmodus, persönliche Akzentfarbe und Layout sind getrennt erreichbar. Der Colorpicker erlaubt auch eigene Farbwerte.
+
+![zMail Einstellungen](assets/screenshots/zMail-settings.png)
 
 <details>
-<summary>Kontaktbearbeitung, Farbauswahl, Updates und Verfassen ansehen</summary>
+<summary>Kontakte, Verfassen, Updates und den ersten Start ansehen</summary>
+
+**Kontakte**
+
+![Kontakte](assets/screenshots/zMail-contacts.png)
 
 **Kontakt bearbeiten**
 
-![Kontakt bearbeiten](assets/screenshots/zuMail-contact-editor.png)
-
-**Farbe auswählen**
-
-![Farbauswahl](assets/screenshots/zuMail-colorpicker.png)
-
-**Update herunterladen**
-
-![Markdown-Änderungshinweise und Downloadfortschritt](assets/screenshots/zuMail-update.png)
+![Kontakt bearbeiten](assets/screenshots/zMail-contact-editor.png)
 
 **Nachricht verfassen**
 
-![Neue Nachricht verfassen](assets/screenshots/zuMail-compose.png)
+![Nachricht verfassen](assets/screenshots/zMail-compose.png)
+
+**Farbe auswählen**
+
+![Farbauswahl](assets/screenshots/zMail-colorpicker.png)
+
+**Änderungshinweise und Downloadfortschritt**
+
+![Updater](assets/screenshots/zMail-update.png)
+
+**Leerer Erststart**
+
+![Erster Start ohne Beispieldaten](assets/screenshots/zMail-empty.png)
 
 </details>
 
-Die Screenshots zeigen eigens angelegte Testinhalte. Diese werden nicht mit der App ausgeliefert.
+Für die Screenshots wurden getrennte Testprofile verwendet. Deren Kontakte und Nachrichten werden nicht mit der App ausgeliefert.
 
-## Neu in Alpha 11
+## Neu in 0.2.0-alpha.1
 
-- **Änderungen im Updater formatiert lesen:** Überschriften, Listen, Hervorhebungen, Tabellen, Links und Screenshots werden direkt angezeigt. Text lässt sich markieren und kopieren. Die Ansicht passt sich dem hellen oder dunklen Design an.
-- **zuMail erneut öffnen:** Ein weiterer Start holt das bereits geöffnete Fenster nach vorn. Minimierte oder im Infobereich versteckte Fenster werden wiederhergestellt; eine vorher maximierte Ansicht bleibt maximiert. Es erscheint keine Meldung „ist bereits geöffnet“ mehr.
-- **Sperre und Arbeitsstand bleiben erhalten:** Die vorhandene Sitzung wird weiterverwendet. Eine aktive PIN-Sperre bleibt bestehen; ein zusätzlicher Windows-Autostart bleibt im Hintergrund.
+- **zuMail heißt jetzt zMail.** Vorhandene Mailkonten, Arbeitsbereiche, Kontakte, Nachrichten und PIN-Einstellungen werden weiterverwendet. Eine neue Kontoeinrichtung ist nicht nötig.
+- **Neues Zumbyte-Design:** warme helle Flächen, ruhiges Anthrazit, die Schriften der Website und ein zum Farbmodus passender Lavendel-Akzent. Eigene Akzentfarben bleiben erhalten; in den Einstellungen steht zusätzlich „Zumbyte-Standard“ bereit.
+- **Überarbeitete Mailansicht:** eigene Fensterleiste, neue Wortmarke, Absenderinitialen in der Nachrichtenliste, klarere Abstände und eine aufgeräumte Ansicht beim ersten Start. Einstellungen, Kontakte, Verfassen und Menüs verwenden dieselbe Gestaltung.
+- **Neues App-Icon:** Brief und Z in Lavendel auf Anthrazit, mit dezentem Glow und abgestimmten Größen für Windows.
+- **Signierte Windows-Ausgabe:** Programm, Hilfskomponenten, Installer und Deinstaller werden lokal über Microsoft Artifact Signing signiert und mit Zeitstempel geprüft. Der Updater prüft zusätzlich zur Dateiprüfsumme die Windows-Signatur und den Herausgeber.
+- **Bestehende Verknüpfungen bleiben nutzbar.** Der bisherige zuMail-Startpfad ist weiterhin enthalten; er öffnet dieselbe Sitzung.
 
 [Alle Änderungen ansehen](CHANGELOG.md)
 
-## Das kann zuMail
+## Funktionen
 
 | Bereich | Funktionen |
 | --- | --- |
-| Konten & Arbeitsbereiche | Mehrere IMAP-/SMTP-Konten, automatische Serverermittlung, getrennte Arbeitsbereiche und Absenderprofile |
+| Konten & Arbeitsbereiche | Mehrere IMAP-/SMTP-Konten, Serverermittlung, getrennte Arbeitsbereiche und Absenderprofile |
 | Nachrichten | Konversationsansicht, Suche, Mehrfachauswahl, Sammelaktionen und Verschieben per Drag & Drop |
 | Verfassen | Formatierter Text, An/Cc/Bcc mit Kontaktvorschlägen, Anhänge, Entwürfe und Versandwiderruf vor dem Senden |
 | Lesen | HTML oder Text, separate Mailfenster, kopierbarer Inhalt und Anhangvorschau mit Speichern |
 | Kontakte | Mehrere Kontaktdaten je Person, Fotos, vCard-Import/-Export und optionaler CardDAV-Abgleich |
 | Ordnung | Lokale und Serverordner, eigene Regeln, Spamlisten sowie Projekte mit Notizen und Aufgaben |
-| Anpassen | Dark/Light Mode, Farbauswahl, verstellbare Bereiche, schmale Scrollleisten und sortierbare Sidebar |
+| Anpassen | Dark/Light Mode, Zumbyte- oder eigene Farben, verstellbare Bereiche, schmale Scrollleisten und sortierbare Sidebar |
 | Sicherheit | Verschlüsselter lokaler Speicher, optionale 4-/6-stellige PIN, Autolock und passwortgeschützte Sicherungen |
 | Windows | Benachrichtigungen, einstellbare Töne, Hintergrundbetrieb und Autostart auf Wunsch minimiert |
-| Updates | Formatierte Änderungshinweise, Downloadfortschritt und Neustart nach der Installation |
+| Updates | Markdown-Änderungshinweise, Downloadfortschritt, Signaturprüfung und Neustart nach der Installation |
 
 Externe Bilder in HTML-Mails werden erst nach Freigabe geladen. Auf Wunsch kannst du einer Absenderadresse dauerhaft vertrauen. Seitenskripte bleiben gesperrt.
 
 ## Installieren und starten
 
-1. **Setup herunterladen** und ausführen. Alternativ die portable ZIP vollständig entpacken und `zuMail.exe` starten.
+1. **Setup herunterladen** und ausführen. Alternativ die portable ZIP vollständig entpacken und `zMail.exe` starten.
 2. Im Arbeitsbereichsmenü **Neuer Arbeitsbereich** wählen und anschließend **Konto verknüpfen** öffnen.
 3. Anbieter auswählen, Mailadresse und Passwort bzw. App-Passwort eingeben. Erkannte Serverdaten prüfen und verbinden.
 
@@ -87,16 +108,18 @@ Die Anmeldung erfolgt über IMAP/SMTP. Eine Browser-Anmeldung bei Google oder Mi
 
 .NET und Chromium sind enthalten. Falls die benötigte Microsoft-Visual-C++-Komponente fehlt, lädt der Installer sie direkt von Microsoft. Dafür werden Internet und gegebenenfalls eine Windows-Freigabe benötigt. Für die portable Ausgabe liegt `Runtime-Setup.cmd` bei.
 
-## Updates und vorhandene Daten
+## Von zuMail zu zMail
 
-Unter **Einstellungen → Informationen → Updates** nach einer neuen Version suchen. Download starten und anschließend **Jetzt installieren** wählen. Nach erfolgreicher Installation startet zuMail wieder mit dem bisherigen Profil.
+Für eine vorhandene Installation genügt das Update. Der bisherige Profilordner und seine Verschlüsselung werden beibehalten. Auch alte Verknüpfungen auf `zuMail.exe` bleiben nutzbar.
 
-Die portable Ausgabe bei geschlossener App in einen neuen Ordner entpacken. Das Profil liegt standardmäßig im Windows-Benutzerverzeichnis. Eine Deinstallation erhält die Profildaten. Für einen Gerätewechsel eine passwortgeschützte Sicherung aus zuMail verwenden.
+Unter **Einstellungen → Informationen → Updates** nach der neuen Version suchen. Nach **Herunterladen** und der Datei- und Signaturprüfung **Jetzt installieren** wählen. Nach erfolgreicher Installation öffnet sich zMail mit dem bisherigen Profil und einer gegebenenfalls eingerichteten PIN-Sperre.
+
+Die portable Ausgabe bei geschlossener App vollständig in einen neuen Ordner entpacken und `zMail.exe` öffnen. Das Profil liegt standardmäßig im Windows-Benutzerverzeichnis. Für einen Gerätewechsel eine passwortgeschützte Sicherung aus der App verwenden.
 
 ## Hilfe und Hinweise
 
 [Erste Schritte](docs/Anleitung.md) · [Kontoeinrichtung](docs/Anbieter-Anmeldung.md) · [Prüfbericht](docs/Pruefung.md) · [Support](https://www.zumbyte.de/support/)
 
-Suche und Ordnerzähler beziehen sich auf lokal geladene Nachrichten. Nachrichtenverschlüsselung mit OpenPGP/S/MIME und mobiler Push sind noch nicht enthalten. Weitere Grenzen stehen in der Anleitung.
+Suche und Ordnerzähler beziehen sich auf lokal geladene Nachrichten. OpenPGP/S/MIME und mobiler Push sind noch nicht enthalten. Weitere Grenzen stehen in der Anleitung.
 
 Copyright by Zumbyte - AppSolution · made with ♥ by zumbyte

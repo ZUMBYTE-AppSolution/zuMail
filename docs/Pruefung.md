@@ -1,8 +1,17 @@
-# Prüfung · 0.1.0-alpha.11
+# Prüfung · 0.2.0-alpha.1
 
-285 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
+299 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
 
-## Neu in Alpha 11 geprüft
+## Neues Design und Umbenennung
+
+- Alte, mit der bisherigen DPAPI-Kennung geschützte Profile mit Konten, PIN, persönlicher Farbe und Layout geladen. Schlüssel und verschlüsselte Originalnachrichten bleiben bytegleich; Formatkennung und Profilpfad bleiben stabil.
+- Die eingebetteten Website-Schriften werden als tatsächliche WPF-Typefaces aufgelöst; kein stiller Ersatz durch die Systemschrift. Helle und dunkle Zumbyte-Farben sowie eine unverändert gespeicherte Cyan-Akzentfarbe geprüft.
+- Eigene Fensterleiste mit Windows-Fensterbefehlen, Absenderinitialen und neuer leerer Einrichtungsansicht. Leere Profile enthalten weiterhin keine Testkonten oder Mails.
+- Windows-Vertrauensprüfung akzeptiert die wirklich signierte App-Assembly und den freigegebenen Herausgeber. Eine veränderte signierte Datei und unsignierte Inhalte werden abgewiesen.
+- Signierte NSIS-Probe erzeugt einen gültig signierten Deinstaller mit Zeitstempel. Die Signaturen des tatsächlichen Programmpakets, Installers und installierten Deinstallers werden vor der Veröffentlichung nochmals geprüft.
+- Bisheriger Startpfad zuMail.exe bleibt funktionsfähig und verwendet dieselbe Sitzung; eine zweite Sitzung darf durch den kompatiblen Start nicht entstehen.
+
+## Weiterhin geprüft
 
 - Echte lokale Aktivierungsanfragen zwischen getrennten Prozessen, mehrere gleichzeitige Starts, ungültige Anfragen, Abbruch und Trennung verschiedener Profile.
 - Wiederherstellung des tatsächlichen minimierten und versteckten WPF-Hauptfensters. Maximierte Ansichten bleiben maximiert; PIN-Sperre und verborgener Mailinhalt bleiben erhalten.
@@ -32,10 +41,10 @@
 
 ## Pakete
 
-- Dieselben 285 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
+- Dieselben 299 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
 - Installierte Programmdatei und Chromium-Ressourcen mit dem Build verglichen. Portable ZIP Datei für Datei gegen den Build geprüft.
 - Deinstallation entfernt die Programmdateien und erhält fremde Testdateien und Profile. Bestehende Startmenüverknüpfungen und Registrierungseinträge des Prüfgeräts werden nach dem Test wiederhergestellt.
-- Keine Beispieldaten, vorbereiteten Profile oder OAuth-Registrierungen enthalten. Inhalte der Screenshots stammen ausschließlich aus den getrennten Testläufen.
+- Keine Beispieldaten, vorbereiteten Profile, privaten Signierkonfigurationen oder OAuth-Registrierungen enthalten. Inhalte der Screenshots stammen ausschließlich aus den getrennten Testläufen.
 - Prüfsummen der öffentlichen Downloads mit den lokalen Paketen verglichen. Berichte: `verification.json` und `installer-verification.json` in den Release-Dateien.
 
-Die Fensterprüfungen nutzen eigene unsichtbare WPF-Fenster. Eine Neuinstallation der Visual-C++-Komponente auf einer Referenz-VM wurde nicht geprüft; auf dem Prüfgerät ist sie vorhanden. Windows-Pakete sind derzeit unsigniert. macOS/iOS, mobiler Push und OpenPGP/S/MIME sind nicht Bestandteil dieses Builds.
+Die Fensterprüfungen nutzen eigene unsichtbare WPF-Fenster. Eine Neuinstallation der Visual-C++-Komponente auf einer Referenz-VM wurde nicht geprüft; auf dem Prüfgerät ist sie vorhanden. Die Windows-Programme und Installer sind über Microsoft Artifact Signing signiert. macOS/iOS, mobiler Push und OpenPGP/S/MIME sind nicht Bestandteil dieses Builds.

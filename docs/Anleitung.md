@@ -1,8 +1,8 @@
-# zuMail · Erste Schritte
+# zMail · Erste Schritte
 
 ## Arbeitsbereiche und Konten
 
-Oben in der Sidebar das Arbeitsbereichsmenü öffnen und **Neuer Arbeitsbereich** wählen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zuMail, IMAP-/SMTP-Server und Ports zu ermitteln. Serverwerte, Benutzername und Passwort bzw. App-Passwort eintragen und **Speichern & verbinden** wählen. TLS-Zertifikate werden geprüft.
+Oben in der Sidebar das Arbeitsbereichsmenü öffnen und **Neuer Arbeitsbereich** wählen. Darin **Konto verknüpfen** öffnen und einen Anbieter oder **Freie Eingabe** auswählen. Nach Eingabe der Mailadresse versucht zMail, IMAP-/SMTP-Server und Ports zu ermitteln. Serverwerte, Benutzername und Passwort bzw. App-Passwort eintragen und **Speichern & verbinden** wählen. TLS-Zertifikate werden geprüft.
 
 Browser-Anmeldung und OAuth-Einrichtung sind entfernt. Verwendet ein Anbieter ausschließlich Browser-OAuth, kann er in diesem Build nicht neu verknüpft werden. [Einrichtung und Grenzen](Anbieter-Anmeldung.md).
 
@@ -28,7 +28,7 @@ Unter **Einstellungen → App → Benachrichtigungen** lassen sich **Business Ch
 
 ## Ordner, Regeln und Spam
 
-Rechtsklick in die Ordnerleiste bzw. auf einen eigenen Ordner. Beim Erstellen entscheidet **Auf dem Mailserver erstellen**, ob der Ordner beim Anbieter oder nur in zuMail liegt. Eine lokale Einordnung lässt die Nachricht auf dem Server im bisherigen Ordner bestehen.
+Rechtsklick in die Ordnerleiste bzw. auf einen eigenen Ordner. Beim Erstellen entscheidet **Auf dem Mailserver erstellen**, ob der Ordner beim Anbieter oder nur in zMail liegt. Eine lokale Einordnung lässt die Nachricht auf dem Server im bisherigen Ordner bestehen.
 
 Nachrichten per Rechtsklick **Verschieben …** einordnen. Serverordner werden auf dem Server geändert; nur leere eigene Ordner können entfernt werden.
 
@@ -48,9 +48,9 @@ Unter **Import & Export** Nachrichten bzw. eine passwortgeschützte Sicherung ex
 
 ## Updates und Deinstallation
 
-**Einstellungen → Informationen → Updates** bietet Alpha- und stabile Versionen. Der Installer wird aus dem offiziellen Release-Repository bezogen und vor dem Start mit SHA-256 geprüft. Windows-Pakete sind noch nicht Authenticode-signiert.
+**Einstellungen → Informationen → Updates** bietet Alpha- und stabile Versionen. Der Installer wird aus dem offiziellen Release-Repository bezogen und vor dem Start mit SHA-256 geprüft. Windows-Programm und Installer sind über Microsoft Artifact Signing signiert. Der zertifizierte Herausgeber ist Andreas Zumbansen.
 
-Nach **Herunterladen** zeigt das Updatefenster Prozent, Datenmenge, Geschwindigkeit und geschätzte Restzeit. Ist die Dateigröße nicht bekannt, bleibt die geladene Datenmenge sichtbar. **Abbrechen** entfernt den unvollständigen Download; danach ist ein neuer Versuch möglich. Nach der Dateiprüfung **Jetzt installieren** wählen. Der Installer wartet auf das Beenden von zuMail und öffnet nach erfolgreicher Installation wieder das bisherige Profil, einschließlich einer eingerichteten PIN-Sperre.
+Nach **Herunterladen** zeigt das Updatefenster Prozent, Datenmenge, Geschwindigkeit und geschätzte Restzeit. Ist die Dateigröße nicht bekannt, bleibt die geladene Datenmenge sichtbar. **Abbrechen** entfernt den unvollständigen Download; danach ist ein neuer Versuch möglich. Nach der Dateiprüfung **Jetzt installieren** wählen. Der Installer wartet auf das Beenden von zMail und öffnet nach erfolgreicher Installation wieder das bisherige Profil, einschließlich einer eingerichteten PIN-Sperre.
 
 Deinstallation entfernt Programm und Verknüpfungen, erhält jedoch Profildaten. Im portablen Paket bedeutet „portabel“ Start ohne Installation; das Profil bleibt standardmäßig im Windows-Benutzerverzeichnis.
 
@@ -105,7 +105,7 @@ Konversationen verwenden lokal geladene Nachrichten des aktiven Arbeitsbereichs.
 
 Eine Mail aus der Liste auf einen Ordnernamen in der Sidebar ziehen. Für mehrere Mails vorher Strg/Umschalt oder den Auswahlmodus verwenden und die Auswahl auf den Zielordner ziehen. Beim Ansetzen des Ziehens bleibt die Gruppe ausgewählt. Das Ziel erhält einen Akzentrahmen; am Rand scrollt die Sidebar automatisch. Esc bricht das Ziehen ab.
 
-Serverordner werden mit dem Mailserver abgeglichen; lokale Ordner erhalten das Serveroriginal und ordnen die Mail nur in zuMail lokal zu. Ein gemeinsames Ziel unter Alle Mailkonten verschiebt jede Mail in den entsprechenden Ordner ihres eigenen Kontos. Für einen konkreten Kontoordner ausschließlich Mails dieses Kontos auswählen. Markiert und Entwürfe sind keine Verschiebeziele. Eine aktive Serververbindung ist erforderlich; fehlgeschlagene Einzelaktionen werden unten angezeigt und verändern die betroffenen Originale nicht.
+Serverordner werden mit dem Mailserver abgeglichen; lokale Ordner erhalten das Serveroriginal und ordnen die Mail nur in zMail lokal zu. Ein gemeinsames Ziel unter Alle Mailkonten verschiebt jede Mail in den entsprechenden Ordner ihres eigenen Kontos. Für einen konkreten Kontoordner ausschließlich Mails dieses Kontos auswählen. Markiert und Entwürfe sind keine Verschiebeziele. Eine aktive Serververbindung ist erforderlich; fehlgeschlagene Einzelaktionen werden unten angezeigt und verändern die betroffenen Originale nicht.
 
 
 ## Oberfläche und App-Töne
@@ -121,7 +121,7 @@ Versandkonto und Absenderprofil stehen oben direkt zur Auswahl. Über Cc und Bcc
 
 Anhänge über Anhang hinzufügen oder Dateien auf das Verfassen-Fenster ziehen. Dateikarten zeigen die Anhänge und bieten eine Entfernen-Aktion. Linkadresse und angezeigten Linktext gemeinsam eingeben; Textfarben über Farbfelder oder Hex-Wert wählen. Senden oder Strg+Enter startet den Versand. Während der Widerrufszeit stoppt Senden stoppen den Vorgang.
 
-Beim Schließen einer geänderten Nachricht ausdrücklich Entwurf speichern, Verwerfen oder Weiter bearbeiten wählen. Das Schließsymbol der Rückfrage bricht den Schließwunsch ab. Alle zuMail-eigenen Dialoge verwenden den gemeinsamen Fensterrahmen; Dateien werden über die aktuelle Windows-Dateiauswahl gewählt. Scrollleisten erscheinen als sehr schmale 2-Pixel-Linien.
+Beim Schließen einer geänderten Nachricht ausdrücklich Entwurf speichern, Verwerfen oder Weiter bearbeiten wählen. Das Schließsymbol der Rückfrage bricht den Schließwunsch ab. Alle zMail-eigenen Dialoge verwenden den gemeinsamen Fensterrahmen; Dateien werden über die aktuelle Windows-Dateiauswahl gewählt. Scrollleisten erscheinen als sehr schmale 2-Pixel-Linien.
 
 ## Kontaktverwaltung und Farbauswahl ab Alpha 10
 
@@ -133,8 +133,16 @@ Beim Schließen einer geänderten Nachricht ausdrücklich Entwurf speichern, Ver
 
 Unter **Einstellungen → Darstellung → Erscheinungsbild** öffnet **Farbe auswählen** den Colorpicker. In der Farbfläche Sättigung und Helligkeit wählen, am Regler den Farbton einstellen oder einen Hex-Wert wie #52D8F3 eingeben. Erst **Übernehmen** bestätigt die Farbe. Der gleiche Picker steht beim Verfassen für Textfarben bereit.
 
-## Änderungen lesen und zuMail erneut öffnen
+## Änderungen lesen und zMail erneut öffnen
 
 Der Updater zeigt den Changelog mit formatierten Überschriften, Listen, Tabellen und Links. Text lässt sich markieren und kopieren. Screenshots aus der offiziellen Releasequelle erscheinen direkt; andere Bildadressen lassen sich über ihren Link im Browser öffnen.
 
-Ist zuMail schon geöffnet, holt ein weiterer Start das vorhandene Fenster nach vorn. Das gilt auch für minimierte oder im Infobereich versteckte Fenster. Eine aktive PIN-Sperre bleibt erhalten. Ein zusätzlicher automatischer Start bei der Windows-Anmeldung öffnet das Fenster nicht ungefragt.
+Ist zMail schon geöffnet, holt ein weiterer Start das vorhandene Fenster nach vorn. Das gilt auch für minimierte oder im Infobereich versteckte Fenster. Eine aktive PIN-Sperre bleibt erhalten. Ein zusätzlicher automatischer Start bei der Windows-Anmeldung öffnet das Fenster nicht ungefragt.
+
+## Bisher zuMail, jetzt zMail
+
+Ein Update übernimmt die bisherigen Konten und Einstellungen. Profilpfad, PIN und verschlüsselte Originalnachrichten bleiben erhalten. Es werden keine Konten neu angelegt. Alte Verknüpfungen auf zuMail.exe bleiben als kompatibler Startpfad erhalten; neue Verknüpfungen starten zMail.exe.
+
+Unter **Einstellungen → Darstellung → Erscheinungsbild** wählt **Zumbyte-Standard** die Website-Farben: Lavendel auf Anthrazit bzw. Violett auf warmem Weiß. Bereits gespeicherte eigene Farben bleiben erhalten und können weiterhin im Colorpicker verändert werden.
+
+Updates werden vor dem Start auf Dateiprüfsumme, gültige Windows-Signatur und den erwarteten Herausgeber geprüft. Bei einem Fehler startet der Installer nicht. Eine eingerichtete PIN bleibt nach dem Neustart aktiv.

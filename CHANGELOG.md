@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0-alpha.1 · zMail
+
+- **zuMail heißt jetzt zMail.** Vorhandene Mailkonten, Arbeitsbereiche, Kontakte, Nachrichten und PIN-Einstellungen werden weiterverwendet. Eine neue Kontoeinrichtung ist nicht nötig.
+- **Neues Zumbyte-Design:** warme helle Flächen, ruhiges Anthrazit, die Schriften der Website und ein zum Farbmodus passender Lavendel-Akzent. Eigene Akzentfarben bleiben erhalten; in den Einstellungen steht zusätzlich „Zumbyte-Standard“ bereit.
+- **Überarbeitete Mailansicht:** eigene Fensterleiste, neue Wortmarke, Absenderinitialen in der Nachrichtenliste, klarere Abstände und eine aufgeräumte Ansicht beim ersten Start. Einstellungen, Kontakte, Verfassen und Menüs verwenden dieselbe Gestaltung.
+- **Neues App-Icon:** Brief und Z in Lavendel auf Anthrazit, mit dezentem Glow und abgestimmten Größen für Windows.
+- **Signierte Windows-Ausgabe:** Programm, Hilfskomponenten, Installer und Deinstaller werden lokal über Microsoft Artifact Signing signiert und mit Zeitstempel geprüft. Der Updater prüft zusätzlich zur Dateiprüfsumme die Windows-Signatur und den Herausgeber.
+- **Bestehende Verknüpfungen bleiben nutzbar.** Der bisherige zuMail-Startpfad ist weiterhin enthalten; er öffnet dieselbe Sitzung.
+
+299 automatische Prüfungen. Alte verschlüsselte Profile, PIN, persönliche Farben, echte Schriftdateien, beschädigte Signaturen, Installation, Update-Neustart, bisheriger Startpfad und Deinstallation geprüft. Neue Profile starten leer.
+
 ## 0.1.0-alpha.11
 
 - **Änderungen im Updater formatiert lesen:** Überschriften, Listen, Hervorhebungen, Tabellen, Links und Screenshots werden direkt angezeigt. Text lässt sich markieren und kopieren. Die Ansicht passt sich dem hellen oder dunklen Design an.

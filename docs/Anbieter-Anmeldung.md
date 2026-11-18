@@ -1,6 +1,6 @@
 # Konten einrichten
 
-Unter **Konto verknüpfen** einen Anbieter oder **Freie Eingabe** wählen. Für neue Konten verwendet zuMail IMAP und SMTP mit Passwort bzw. einem vom Anbieter unterstützten App-Passwort. Die App enthält keine Browser-Anmeldung, keine Schlüssel-Eingabe und keine gemeinsame OAuth-Registrierung.
+Unter **Konto verknüpfen** einen Anbieter oder **Freie Eingabe** wählen. Für neue Konten verwendet zMail IMAP und SMTP mit Passwort bzw. einem vom Anbieter unterstützten App-Passwort. Die App enthält keine Browser-Anmeldung, keine Schlüssel-Eingabe und keine gemeinsame OAuth-Registrierung.
 
 1. Arbeitsbereich anlegen und **Konto verknüpfen** öffnen.
 2. Anbieter auswählen. Gmail und iCloud haben vorbereitete Serverdaten; **Freie Eingabe** ermittelt die Konfiguration nach Eingabe der Mailadresse.
