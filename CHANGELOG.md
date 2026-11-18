@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0-alpha.2 · Schriftbild
+
+- **Die vertraute App-Schrift ist zurück.** Menüs, Buttons, Sidebar, Einstellungen und Überschriften verwenden wieder Segoe UI. Die Website-Schriften werden nicht mehr in die App eingebunden.
+- **Klarere Überschriften:** Postfach und leerer Lesebereich erhalten wieder kompakte, kräftigere Überschriften. Die Wortmarke verwendet ebenfalls die App-Schrift.
+- **Das neue Zumbyte-Design bleibt:** Farben, Layout, Icon und persönliche Akzentfarben werden beibehalten. Vorhandene Nachrichten und ihre Formatierung bleiben erhalten.
+
+302 automatische Prüfungen. Darstellung als native WPF-Oberfläche und Rasterausgaben bei 100, 125, 150 und 200 Prozent kontrolliert. Windows-Pakete weiterhin mit Microsoft Artifact Signing signiert.
+
 ## 0.2.0-alpha.1 · zMail
 
 - **zuMail heißt jetzt zMail.** Vorhandene Mailkonten, Arbeitsbereiche, Kontakte, Nachrichten und PIN-Einstellungen werden weiterverwendet. Eine neue Kontoeinrichtung ist nicht nötig.

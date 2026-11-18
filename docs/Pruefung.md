@@ -1,11 +1,16 @@
-# Prüfung · 0.2.0-alpha.1
+# Prüfung · 0.2.0-alpha.2
 
-299 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
+302 automatische Prüfungen mit getrennten Testprofilen und eigenen IMAP-/SMTP-Testservern. Es wurden keine echten Mailkonten, Kontakte oder Dokumente verändert.
+
+## Schriftbild
+
+- Website-Schriften werden nicht mehr eingebettet; Überschriften verwenden dieselbe Systemschrift wie die übrige App. Layoutausrichtung, Display-Formatierung und ClearType bleiben aktiv.
+- Native Rasterausgaben bei 100, 125, 150 und 200 Prozent erstellt und kontrolliert. Dies ersetzt keinen Test auf vier physischen Monitoren mit unterschiedlicher Skalierung.
 
 ## Neues Design und Umbenennung
 
 - Alte, mit der bisherigen DPAPI-Kennung geschützte Profile mit Konten, PIN, persönlicher Farbe und Layout geladen. Schlüssel und verschlüsselte Originalnachrichten bleiben bytegleich; Formatkennung und Profilpfad bleiben stabil.
-- Die eingebetteten Website-Schriften werden als tatsächliche WPF-Typefaces aufgelöst; kein stiller Ersatz durch die Systemschrift. Helle und dunkle Zumbyte-Farben sowie eine unverändert gespeicherte Cyan-Akzentfarbe geprüft.
+- Segoe UI regulär und halbfett werden als tatsächliche Windows-Schriftdateien aufgelöst. Sidebar, Buttons, Wortmarke, Einstellungen und Verfassen verwenden wieder die bisherige Systemschrift. Helle und dunkle Zumbyte-Farben sowie eine unverändert gespeicherte Cyan-Akzentfarbe geprüft.
 - Eigene Fensterleiste mit Windows-Fensterbefehlen, Absenderinitialen und neuer leerer Einrichtungsansicht. Leere Profile enthalten weiterhin keine Testkonten oder Mails.
 - Windows-Vertrauensprüfung akzeptiert die wirklich signierte App-Assembly und den freigegebenen Herausgeber. Eine veränderte signierte Datei und unsignierte Inhalte werden abgewiesen.
 - Signierte NSIS-Probe erzeugt einen gültig signierten Deinstaller mit Zeitstempel. Die Signaturen des tatsächlichen Programmpakets, Installers und installierten Deinstallers werden vor der Veröffentlichung nochmals geprüft.
@@ -41,7 +46,7 @@
 
 ## Pakete
 
-- Dieselben 299 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
+- Dieselben 302 Prüfungen gegen das tatsächlich installierte Paket ausgeführt.
 - Installierte Programmdatei und Chromium-Ressourcen mit dem Build verglichen. Portable ZIP Datei für Datei gegen den Build geprüft.
 - Deinstallation entfernt die Programmdateien und erhält fremde Testdateien und Profile. Bestehende Startmenüverknüpfungen und Registrierungseinträge des Prüfgeräts werden nach dem Test wiederhergestellt.
 - Keine Beispieldaten, vorbereiteten Profile, privaten Signierkonfigurationen oder OAuth-Registrierungen enthalten. Inhalte der Screenshots stammen ausschließlich aus den getrennten Testläufen.
